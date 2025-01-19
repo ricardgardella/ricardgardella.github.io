@@ -414,6 +414,36 @@ img{
     }
 }
 
+/*==================== TRUSTED BY ====================*/
+.trusted {
+    &__container {
+        overflow: initial;
+    }
+
+    &__content {
+        padding: 0 1.5rem;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        height: 100px;  /* Reduced container height */
+    }
+
+    &__img {
+        width: auto;  /* Let width be determined by height */
+        height: 45px;  /* Fixed smaller height for all logos */
+        object-fit: contain;
+        justify-self: center;
+        filter: grayscale(100%);
+        opacity: 0.6;
+        transition: .4s;
+
+        &:hover {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+    }
+}
+
 /*==================== SKILLS ====================*/
 .skills{
     &__container{
@@ -1243,5 +1273,16 @@ img{
         &__inputs{
             grid-template-columns: repeat(2, 1fr);
         }
+    }
+}
+
+/* Add these styles for better swiper pagination */
+.swiper-pagination-bullet {
+    background-color: var(--text-color-light);
+    opacity: 0.5;
+
+    &-active {
+        background-color: var(--first-color);
+        opacity: 1;
     }
 }

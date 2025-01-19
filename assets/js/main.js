@@ -125,6 +125,38 @@ let swiperTestimonial = new Swiper('.testimonial__container', {
     }
 })
 
+/*==================== TRUSTED BY SWIPER ====================*/
+let swiperTrusted = new Swiper('.trusted__container', {
+    cssMode: true,
+    loop: true,
+    spaceBetween: 48,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        568: {
+            slidesPerView: 2,
+            spaceBetween: 60,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 80,
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 100,
+        }
+    }
+});
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
