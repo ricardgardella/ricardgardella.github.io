@@ -26,6 +26,10 @@
 
     <!--==================== Font Awesome ====================-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Add Calendly scripts -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 
 <body>
@@ -956,11 +960,16 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="contact__buttons">
                     <a href="mailto:ricardgardellagarcia@gmail.com" class="button button--flex">
                         Send me an email
                         <i class="uil uil-fast-mail button__icon"></i>
                     </a>
+                    <!-- Add Calendly button -->
+                    <button class="button button--flex" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/YOUR_USERNAME'});">
+                        Schedule a meeting
+                        <i class="uil uil-calendar-alt button__icon"></i>
+                    </button>
                 </div>
                 <!-- <form action="mailto:ricardgardellagarcia@gmail.com?subject=project&message=message" class="contact__form grid">
                     <div class="contact__inputs grid">
