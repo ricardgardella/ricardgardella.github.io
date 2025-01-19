@@ -375,6 +375,42 @@ img{
             color: var(--first-color-alt);
         }
     }
+    &--secondary {
+        background-color: transparent;
+        border: 1.5px solid var(--first-color);
+        color: var(--first-color);
+        box-shadow: none;
+        opacity: 0.9;
+
+        .button__icon {
+            color: var(--first-color);
+        }
+
+        &:hover {
+            background-color: var(--first-color-lighter);
+            border-color: var(--first-color-alt);
+            color: var(--first-color);
+
+            .button__icon {
+                color: var(--first-color);
+            }
+        }
+
+        .dark-theme & {
+            border-color: var(--first-color-lighter);
+            color: var(--first-color-lighter);
+
+            .button__icon {
+                color: var(--first-color-lighter);
+            }
+
+            &:hover {
+                background-color: var(--first-color-second);
+                border-color: var(--first-color-lighter);
+                color: var(--first-color-lighter);
+            }
+        }
+    }
 }
 
 /*==================== ABOUT ====================*/
