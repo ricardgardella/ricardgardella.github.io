@@ -141,8 +141,10 @@
                         <img id="signature" src="" alt="" class="home__title-name">
                         <h3 class="home__subtitle">AI Data and Software Engineer</h3>
                         <p class="home__description">High level experience in data, AI and software engineering.</p>
-                        <a href="#contact" class="button button--flex">
-                            Contact Me <i class="uil uil-message button__icon"></i>
+                        <a href="#" class="button button--flex"
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ricardgardellagarcia/0ne-on-one-30-minute'}); return false;">
+                            Schedule a meeting
+                            <i class="uil uil-calendar-alt button__icon"></i>
                         </a>
                     </div>
                 </div>
@@ -961,15 +963,16 @@
                     </div>
                 </div>
                 <div class="contact__buttons">
-                    <a href="mailto:ricardgardellagarcia@gmail.com" class="button button--flex">
+                    <a href="#" class="button button--flex"
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ricardgardellagarcia/0ne-on-one-30-minute'}); return false;">
+                        Schedule a meeting
+                        <i class="uil uil-calendar-alt button__icon"></i>
+                    </a>
+                    <div style="margin-bottom: var(--mb-1)"></div>
+                    <a href="mailto:ricardgardellagarcia@gmail.com" class="button button--flex button--secondary">
                         Send me an email
                         <i class="uil uil-fast-mail button__icon"></i>
                     </a>
-                    <!-- Add Calendly button -->
-                    <button class="button button--flex" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/YOUR_USERNAME'});">
-                        Schedule a meeting
-                        <i class="uil uil-calendar-alt button__icon"></i>
-                    </button>
                 </div>
                 <!-- <form action="mailto:ricardgardellagarcia@gmail.com?subject=project&message=message" class="contact__form grid">
                     <div class="contact__inputs grid">
@@ -1013,7 +1016,7 @@
                         <a href="#portfolio" class="footer__link">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#contact" class="footer__link">Contactme</a>
+                        <a href="#contact" class="footer__link">Contact</a>
                     </li>
                 </ul>
 
