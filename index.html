@@ -36,8 +36,8 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li><a href="#now" class="nav__link">Now</a></li>
                     <li><a href="#about" class="nav__link">About</a></li>
-                    <li><a href="#services" class="nav__link">Services</a></li>
                     <li><a href="#skills" class="nav__link">Skills</a></li>
                     <li><a href="#experience" class="nav__link">Experience</a></li>
                     <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
@@ -83,8 +83,8 @@
                             onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ricardgardellagarcia/0ne-on-one-30-minute'}); return false;">
                             <i class="uil uil-calendar-alt"></i> Schedule a call
                         </a>
-                        <a href="assets/pdf/CV_Ricard.pdf" download class="btn btn--outline">
-                            <i class="uil uil-download-alt"></i> Download CV
+                        <a href="#portfolio" class="btn btn--outline">
+                            <i class="fa-solid fa-robot"></i> See NINA AI
                         </a>
                     </div>
                     <div class="hero__socials">
@@ -121,6 +121,24 @@
             </div>
         </section>
 
+        <!-- ===== NOW ===== -->
+        <section class="now" id="now">
+            <div class="container">
+                <div class="now__inner">
+                    <div class="now__pulse">
+                        <span class="now__dot"></span>
+                    </div>
+                    <div class="now__content">
+                        <span class="now__label">What I'm doing now</span>
+                        <p class="now__text">
+                            Just joined <strong>Checkatrade</strong> as Senior AI Engineer — building AI-powered features for the UK's leading home improvement platform. Simultaneously shipping <strong>NINA AI</strong> at Zynap: a multi-agent co-pilot for security analysts. Outside work, I'm going deeper into offensive security through Hack The Box.
+                        </p>
+                    </div>
+                    <a href="#contact" class="now__cta">Work together <i class="uil uil-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
         <!-- ===== ABOUT ===== -->
         <section class="about section" id="about">
             <div class="container">
@@ -132,6 +150,17 @@
                         <p>I'm a Senior AI Engineer and Cybersecurity specialist based in Barcelona with 8+ years of experience building intelligent, data-driven systems. My work sits at the intersection of AI engineering, cybersecurity, and data — where robust systems meet secure design.</p>
                         <p>I combine my role as <strong>Senior AI Engineer at Checkatrade</strong> with running <strong>Zynap</strong>, my own AI and cybersecurity consultancy. I help startups and enterprises design, build, and secure their AI systems.</p>
                         <p>Whether it's building LLM-powered applications, designing data platforms, or securing AI infrastructure, I bring deep technical expertise and a bias for getting things shipped.</p>
+                        <div class="about__expertise">
+                            <div class="about__expertise-item">
+                                <i class="fa-solid fa-brain"></i><span>AI Engineering</span>
+                            </div>
+                            <div class="about__expertise-item">
+                                <i class="fa-solid fa-shield-halved"></i><span>Cybersecurity</span>
+                            </div>
+                            <div class="about__expertise-item">
+                                <i class="fa-solid fa-database"></i><span>Data Engineering</span>
+                            </div>
+                        </div>
                         <div class="about__languages">
                             <span class="lang-badge">🇪🇸 Spanish</span>
                             <span class="lang-badge">🇬🇧 English</span>
@@ -203,13 +232,7 @@
                             <i class="fa-solid fa-shield-halved"></i>
                         </div>
                         <h3 class="service-card__title">Cybersecurity</h3>
-                        <p class="service-card__description">Identify and mitigate security risks in your AI and data infrastructure. Web exploitation, penetration testing, and security architecture reviews.</p>
-                        <ul class="service-card__list">
-                            <li><i class="uil uil-check-circle"></i> AI security & adversarial testing</li>
-                            <li><i class="uil uil-check-circle"></i> Web application penetration testing</li>
-                            <li><i class="uil uil-check-circle"></i> Security architecture review</li>
-                            <li><i class="uil uil-check-circle"></i> Secure AI system design</li>
-                        </ul>
+                        <p class="service-card__description">Web exploitation, penetration testing, AI security, and secure system design. I identify and mitigate risks before they become incidents.</p>
                     </div>
 
                     <div class="service-card service-card--featured">
@@ -217,13 +240,7 @@
                             <i class="fa-solid fa-brain"></i>
                         </div>
                         <h3 class="service-card__title">AI Engineering</h3>
-                        <p class="service-card__description">Design and build production-grade AI systems — from LLM integrations and RAG pipelines to model deployment and MLOps infrastructure.</p>
-                        <ul class="service-card__list">
-                            <li><i class="uil uil-check-circle"></i> LLM integrations & AI agents</li>
-                            <li><i class="uil uil-check-circle"></i> RAG pipelines & vector databases</li>
-                            <li><i class="uil uil-check-circle"></i> ML model deployment & MLOps</li>
-                            <li><i class="uil uil-check-circle"></i> AI-powered APIs & microservices</li>
-                        </ul>
+                        <p class="service-card__description">Production-grade AI systems — LLM integrations, RAG pipelines, multi-agent architectures, MLOps, and AI-powered APIs. From prototype to production.</p>
                     </div>
 
                     <div class="service-card">
@@ -231,13 +248,7 @@
                             <i class="fa-solid fa-database"></i>
                         </div>
                         <h3 class="service-card__title">Data Engineering</h3>
-                        <p class="service-card__description">Build robust data foundations that power AI systems. Data pipelines, warehousing, modeling, and real-time streaming architectures.</p>
-                        <ul class="service-card__list">
-                            <li><i class="uil uil-check-circle"></i> Data pipeline architecture</li>
-                            <li><i class="uil uil-check-circle"></i> Real-time & batch processing</li>
-                            <li><i class="uil uil-check-circle"></i> Data modeling & warehousing</li>
-                            <li><i class="uil uil-check-circle"></i> Cloud data platforms (AWS/GCP)</li>
-                        </ul>
+                        <p class="service-card__description">Data foundations that power AI systems — pipelines, warehousing, real-time streaming, and cloud-native data platforms on AWS and GCP.</p>
                     </div>
                 </div>
             </div>
@@ -339,7 +350,7 @@
                             </div>
                             <p class="timeline__desc">Building AI-powered features and systems for one of the UK's leading home improvement platforms.</p>
                             <div class="timeline__tags">
-                                <span>AI Engineering</span><span>LLMs</span><span>Python</span>
+                                <span>AI Engineering</span><span>LLMs</span><span>RAG</span><span>Agents</span><span>Python</span><span>AWS</span>
                             </div>
                         </div>
                     </div>
@@ -354,9 +365,9 @@
                                 </div>
                                 <span class="timeline__date">2024 — Present</span>
                             </div>
-                            <p class="timeline__desc">Founded Zynap to deliver AI engineering and cybersecurity consulting to startups and scale-ups. Specialising in secure AI system design and implementation.</p>
+                            <p class="timeline__desc">Founded Zynap to deliver AI engineering and cybersecurity consulting to startups and scale-ups. Built NINA AI — a multi-agent security analyst co-pilot — and led penetration testing engagements.</p>
                             <div class="timeline__tags">
-                                <span>AI</span><span>Cybersecurity</span><span>Consulting</span><span>Founder</span>
+                                <span>LLMs</span><span>Multi-agent</span><span>LangChain</span><span>Pentesting</span><span>Vector DBs</span><span>Founder</span>
                             </div>
                         </div>
                     </div>
@@ -371,9 +382,9 @@
                                 </div>
                                 <span class="timeline__date">2023 — 2025</span>
                             </div>
-                            <p class="timeline__desc">Led the design and implementation of Bitpanda's data platform. Mentored team members and managed interns providing technical guidance.</p>
+                            <p class="timeline__desc">Led design and implementation of Bitpanda's data platform — processing 4M+ daily crypto transactions. Rolled out dbt across 4 product teams. Mentored 3 engineers.</p>
                             <div class="timeline__tags">
-                                <span>Data Platform</span><span>Snowflake</span><span>Python</span><span>Tech Lead</span>
+                                <span>Snowflake</span><span>dbt</span><span>Airflow</span><span>Kafka</span><span>Python</span><span>AWS</span><span>Tech Lead</span>
                             </div>
                         </div>
                     </div>
@@ -405,9 +416,9 @@
                                 </div>
                                 <span class="timeline__date">2022 — 2023</span>
                             </div>
-                            <p class="timeline__desc">Designed data models for the Sustainability area, providing key insights to business and regulators.</p>
+                            <p class="timeline__desc">Designed data models for Inditex's Sustainability division, delivering ESG reporting used by leadership and regulators across the world's largest fashion group.</p>
                             <div class="timeline__tags">
-                                <span>Data Modeling</span><span>Tech Lead</span><span>GCP</span>
+                                <span>BigQuery</span><span>dbt</span><span>GCP</span><span>SQL</span><span>ESG Reporting</span><span>Tech Lead</span>
                             </div>
                         </div>
                     </div>
@@ -422,9 +433,9 @@
                                 </div>
                                 <span class="timeline__date">2021 — 2022</span>
                             </div>
-                            <p class="timeline__desc">Built data pipelines and a financial recommendations API used by the product team to improve the app experience.</p>
+                            <p class="timeline__desc">Built the data pipelines and recommendation API powering Goin's core product — personalised financial insights delivered to 500K+ active users.</p>
                             <div class="timeline__tags">
-                                <span>Python</span><span>Data Pipelines</span><span>API</span>
+                                <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Kafka</span><span>Data Pipelines</span>
                             </div>
                         </div>
                     </div>
@@ -439,9 +450,9 @@
                                 </div>
                                 <span class="timeline__date">2019 — 2021</span>
                             </div>
-                            <p class="timeline__desc">Led all data initiatives from scratch — built the data infrastructure, pipelines, and team.</p>
+                            <p class="timeline__desc">Built the entire data stack 0→1 — pipelines, warehouse, reporting, and analytics. Hired and led a 3-person data team for a fast-growing UK logistics startup.</p>
                             <div class="timeline__tags">
-                                <span>Data Leadership</span><span>AWS</span><span>Python</span>
+                                <span>AWS Redshift</span><span>Airflow</span><span>Python</span><span>0→1</span><span>Team Building</span>
                             </div>
                         </div>
                     </div>
@@ -556,7 +567,44 @@
         <section class="portfolio section" id="portfolio">
             <div class="container">
                 <h2 class="section__title">Portfolio</h2>
-                <span class="section__subtitle">Selected projects</span>
+                <span class="section__subtitle">Selected projects with measurable impact</span>
+
+                <!-- ===== FEATURED PROJECT ===== -->
+                <div class="pfeat">
+                    <div class="pfeat__cover">
+                        <div class="pfeat__icon"><i class="fa-solid fa-robot"></i></div>
+                        <span class="pfeat__badge">Featured Project</span>
+                    </div>
+                    <div class="pfeat__body">
+                        <div class="pfeat__meta">
+                            <span class="pcard__tag pcard__tag--teal">Multi-agent AI</span>
+                            <span class="pcard__tag pcard__tag--teal">Cybersecurity</span>
+                            <span class="badge badge--entrepreneur" style="font-size:0.72rem;padding:0.25rem 0.7rem;">Zynap</span>
+                        </div>
+                        <h3 class="pfeat__title">NINA AI — Security Analyst Co-pilot</h3>
+                        <p class="pfeat__desc">Designed and built NINA from the ground up: a multi-agent conversational AI that lets security analysts interact with the Zynap platform in natural language. Analysts describe what they need in plain English — NINA handles threat intelligence queries, workflow automation, malware analysis, and platform diagnostics. Zero custom queries required.</p>
+                        <div class="pfeat__stats">
+                            <div class="pfeat__stat">
+                                <span class="pfeat__stat-num">0</span>
+                                <span class="pfeat__stat-label">Custom queries needed</span>
+                            </div>
+                            <div class="pfeat__stat">
+                                <span class="pfeat__stat-num">4+</span>
+                                <span class="pfeat__stat-label">Security workflows automated</span>
+                            </div>
+                            <div class="pfeat__stat">
+                                <span class="pfeat__stat-num">Multi</span>
+                                <span class="pfeat__stat-label">Agent architecture</span>
+                            </div>
+                        </div>
+                        <div class="pfeat__tech">
+                            <span>LLMs</span><span>Multi-agent</span><span>RAG</span><span>Python</span><span>FastAPI</span><span>LangChain</span><span>Vector DBs</span>
+                        </div>
+                        <a href="https://www.zynap.com" target="_blank" rel="noopener" class="btn btn--primary btn--small">
+                            Visit Zynap <i class="uil uil-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
 
                 <div class="portfolio__grid">
 
@@ -572,7 +620,7 @@
                                 <span class="pcard__tag pcard__tag--blue">Tech Lead</span>
                             </div>
                             <h3 class="pcard__title">Crypto Exchange Data Platform</h3>
-                            <p class="pcard__desc">Led end-to-end design and implementation of Bitpanda's data platform — scalable pipelines processing millions of daily crypto transactions. Mentored engineers and managed interns across the data team.</p>
+                            <p class="pcard__desc">Led end-to-end design and implementation of Bitpanda's data platform — processing <strong>4M+ daily crypto transactions</strong>. Mentored 3 engineers and managed interns. Led dbt adoption across 4 product teams.</p>
                             <div class="pcard__tech">
                                 <span>Snowflake</span><span>Python</span><span>dbt</span><span>Airflow</span><span>AWS</span>
                             </div>
@@ -616,7 +664,7 @@
                                 <span class="pcard__tag pcard__tag--cyan">API</span>
                             </div>
                             <h3 class="pcard__title">Savings Intelligence API</h3>
-                            <p class="pcard__desc">Built the data pipelines and recommendation API powering Goin's core product — personalised financial insights and savings recommendations delivered to hundreds of thousands of active users.</p>
+                            <p class="pcard__desc">Built the data pipelines and recommendation API powering Goin's core product — personalised financial insights and savings recommendations delivered to <strong>500K+ active users</strong>.</p>
                             <div class="pcard__tech">
                                 <span>Python</span><span>PostgreSQL</span><span>FastAPI</span><span>Kafka</span>
                             </div>
@@ -644,27 +692,6 @@
                             </div>
                             <a href="https://www.vixion360.com/" target="_blank" rel="noopener" class="pcard__link">
                                 Visit Vixion <i class="uil uil-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="pcard">
-                        <div class="pcard__cover pcard__cover--teal">
-                            <div class="pcard__cover-icon"><i class="fa-solid fa-robot"></i></div>
-                            <span class="pcard__company-badge">Zynap</span>
-                        </div>
-                        <div class="pcard__body">
-                            <div class="pcard__meta">
-                                <span class="pcard__tag pcard__tag--teal">Multi-agent AI</span>
-                                <span class="pcard__tag pcard__tag--teal">Cybersecurity</span>
-                            </div>
-                            <h3 class="pcard__title">NINA AI — Security Analyst Co-pilot</h3>
-                            <p class="pcard__desc">Designed and built NINA: a multi-agent conversational AI that lets security analysts interact with the Zynap platform in natural language. Covers workflow automation, diagnostics, threat intelligence and malware analysis.</p>
-                            <div class="pcard__tech">
-                                <span>LLMs</span><span>Multi-agent</span><span>RAG</span><span>Python</span><span>FastAPI</span>
-                            </div>
-                            <a href="https://www.zynap.com" target="_blank" rel="noopener" class="pcard__link">
-                                Visit Zynap <i class="uil uil-arrow-right"></i>
                             </a>
                         </div>
                     </div>
@@ -701,7 +728,7 @@
                                 <span class="pcard__tag pcard__tag--violet">From scratch</span>
                             </div>
                             <h3 class="pcard__title">End-to-End Data Infrastructure</h3>
-                            <p class="pcard__desc">Built the entire data stack from zero as Head of Data — pipelines, warehouse, reporting and analytics for a fast-growing UK logistics startup.</p>
+                            <p class="pcard__desc">Built the entire data stack <strong>0→1</strong> as Head of Data — pipelines, warehouse, reporting, and analytics team. Hired 3 data engineers in 12 months for a fast-growing UK logistics startup.</p>
                             <div class="pcard__tech">
                                 <span>Python</span><span>AWS Redshift</span><span>Airflow</span><span>PostgreSQL</span>
                             </div>
@@ -821,6 +848,9 @@
                         </a>
                         <a href="mailto:ricard.gardella.garcia@gmail.com" class="btn btn--outline btn--large">
                             <i class="uil uil-fast-mail"></i> Send Email
+                        </a>
+                        <a href="assets/pdf/CV_Ricard.pdf" download class="btn btn--outline btn--large">
+                            <i class="uil uil-download-alt"></i> Download CV
                         </a>
                     </div>
                 </div>
