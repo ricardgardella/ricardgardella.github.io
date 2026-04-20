@@ -1,1052 +1,750 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricard Gardella — Senior AI Engineer & Cybersecurity Specialist</title>
 
-    <!--==================== UNICONS ====================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-
-    <!--==================== SWIPER CSS====================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-    <!--==================== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <meta property="og:image" content="assets/img/about.png">
 
-    <meta property="og:description" content="AI Data and Software Engineer with extensive knowledge and years of
-                        experience in the design and application of data pipelines, data modeling, data warehousing." />
+    <meta property="og:title" content="Ricard Gardella — Senior AI Engineer & Cybersecurity Specialist">
+    <meta property="og:description" content="Senior AI Engineer & Cybersecurity Specialist. Building secure, intelligent systems at the intersection of AI and cybersecurity.">
+    <meta property="og:url" content="https://www.ricardgardella.com">
+    <meta property="og:image" content="assets/img/perfil.png">
 
-    <meta property="og:url"content="http://www.ricardgardella.com" />
-
-    <meta property="og:title" content="Ricard Gardella" />
-    <title>Ricard Gardella</title>
-
-    <!--==================== Font Awesome ====================-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- Add Calendly scripts -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 
 <body>
-    <!--==================== HEADER ====================-->
+    <!-- ===== HEADER ===== -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Ricard</a>
+            <a href="#home" class="nav__logo">
+                <span class="nav__logo-bracket">&lt;</span>RG<span class="nav__logo-bracket">/&gt;</span>
+            </a>
 
             <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list grid">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            <i class="uil uil-estate nav__icon"></i> Home
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> About
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-alt nav__icon"></i> Skills
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#services" class="nav__link">
-                            <i class="uil uil-briefcase-alt nav__icon"></i> Services
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Portfolio
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i> Contact
-                        </a>
-                    </li>
-
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#services" class="nav__link">Services</a></li>
+                    <li><a href="#skills" class="nav__link">Skills</a></li>
+                    <li><a href="#experience" class="nav__link">Experience</a></li>
+                    <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
-
                 <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
 
-            <div class="nav__btns">
-                <!-- Theme change button -->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
-
+            <div class="nav__actions">
+                <a href="https://www.linkedin.com/in/ricard-gardella-garcia/" target="_blank" class="nav__social">
+                    <i class="uil uil-linkedin-alt"></i>
+                </a>
+                <a href="https://x.com/RicardGardella" target="_blank" class="nav__social">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <button class="theme-toggle" id="theme-button" aria-label="Toggle theme">
+                    <i class="uil uil-sun"></i>
+                </button>
                 <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
+                    <i class="uil uil-bars"></i>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!--==================== MAIN ====================-->
     <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__content grid">
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/ricard-gardella-garcia/" target="_blank"
-                            class="home__social-icon">
-                            <i class="uil uil-linkedin-alt"></i>
+        <!-- ===== HERO ===== -->
+        <section class="hero section" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <div class="hero__badges">
+                        <span class="badge badge--employee"><i class="uil uil-building"></i> Employee</span>
+                        <span class="badge badge--entrepreneur"><i class="uil uil-rocket"></i> Entrepreneur</span>
+                    </div>
+                    <h1 class="hero__name">Ricard <span class="hero__name-accent">Gardella</span></h1>
+                    <h2 class="hero__title">Senior AI Engineer &amp;<br>Cybersecurity Specialist</h2>
+                    <p class="hero__description">
+                        Building secure, intelligent systems at the intersection of AI and cybersecurity.
+                        Senior AI Engineer at <span class="text-accent">Checkatrade</span> · Founder at <span class="text-accent">Zynap</span>
+                    </p>
+                    <div class="hero__cta">
+                        <a href="#" class="btn btn--primary"
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ricardgardellagarcia/0ne-on-one-30-minute'}); return false;">
+                            <i class="uil uil-calendar-alt"></i> Schedule a call
                         </a>
-
-                        <a href="https://twitter.com/ricardgardella" target="_blank" class="home__social-icon">
-                            <i class="fa-brands fa-x-twitter"></i>
+                        <a href="assets/pdf/CV_Ricard.pdf" download class="btn btn--outline">
+                            <i class="uil uil-download-alt"></i> Download CV
                         </a>
-
-                        <a href="https://github.com/ricardgardella" target="_blank" class="home__social-icon">
+                    </div>
+                    <div class="hero__socials">
+                        <a href="https://github.com/ricardgardella" target="_blank" class="hero__social">
                             <i class="uil uil-github-alt"></i>
                         </a>
-                    </div>
-
-                    <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 200 187">
-                            <mask id="mask0" mask-type="alpha">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                            </mask>
-                            <g mask="url(#mask0)">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-
-                                <!--==================== 
-                                        Insert your image in the Img folder and Change your image |
-                                        Center your image with X: horizontal, Y: vertical 
-                                    ====================-->
-                                <image class="home__blob-img" x="25" y="25" href="assets/img/perfil.png" />
-                            </g>
-                        </svg>
-                    </div>
-
-                    <div class="home__data">
-                        <h1 class="home__title">Hi, I'm</h1>
-                        <img id="signature" src="" alt="" class="home__title-name">
-                        <h3 class="home__subtitle">AI Data and Software Engineer</h3>
-                        <p class="home__description">High level experience in data, AI and software engineering.</p>
-                        <a href="#" class="button button--flex"
-                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ricardgardellagarcia/0ne-on-one-30-minute'}); return false;">
-                            Schedule a meeting
-                            <i class="uil uil-calendar-alt button__icon"></i>
+                        <a href="https://www.linkedin.com/in/ricard-gardella-garcia/" target="_blank" class="hero__social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://x.com/RicardGardella" target="_blank" class="hero__social">
+                            <i class="fa-brands fa-x-twitter"></i>
                         </a>
                     </div>
                 </div>
 
-
-                <div class="home__scroll">
-                    <a href="#about" class="home__scroll-button button--flex">
-                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                        <span class="home__scroll-name">Scroll down</span>
-                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                    </a>
+                <div class="hero__visual">
+                    <div class="hero__img-wrapper">
+                        <img src="assets/img/perfil.png" alt="Ricard Gardella" class="hero__img">
+                        <div class="hero__img-ring"></div>
+                    </div>
+                    <div class="hero__float hero__float--1">
+                        <i class="fa-solid fa-brain"></i>
+                        <span>AI / ML</span>
+                    </div>
+                    <div class="hero__float hero__float--2">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Cybersecurity</span>
+                    </div>
+                    <div class="hero__float hero__float--3">
+                        <i class="fa-solid fa-database"></i>
+                        <span>Data Engineering</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!--==================== ABOUT ====================-->
+        <!-- ===== ABOUT ===== -->
         <section class="about section" id="about">
-            <h2 class="section__title">About Me</h2>
-            <span class="section__subtitle">My introduction</span>
+            <div class="container">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">Engineer by profession, entrepreneur by nature</span>
 
-            <div class="about__container container grid">
-                <img src="assets/img/about.jpg" alt="" class="about__img">
-
-                <div class="about__data">
-                    <p class="about__description">AI Data and Software Engineer with extensive knowledge and years of
-                        experience in the design and application of data pipelines, data modeling, data warehousing.
-                    </p>
-
-                    <div class="about__info">
-                        <div>
-                            <span class="about__info-title">08+</span>
-                            <span class="about__info-name">Years <br> experience</span>
-                        </div>
-
-                        <div>
-                            <span class="about__info-title">15+</span>
-                            <span class="about__info-name">Completed <br> projects</span>
-                        </div>
-
-                        <div>
-                            <span class="about__info-title">10+</span>
-                            <span class="about__info-name">Companies <br> worked</span>
+                <div class="about__container">
+                    <div class="about__text">
+                        <p>I'm a Senior AI Engineer and Cybersecurity specialist based in Barcelona with 8+ years of experience building intelligent, data-driven systems. My work sits at the intersection of AI engineering, cybersecurity, and data — where robust systems meet secure design.</p>
+                        <p>I combine my role as <strong>Senior AI Engineer at Checkatrade</strong> with running <strong>Zynap</strong>, my own AI and cybersecurity consultancy. I help startups and enterprises design, build, and secure their AI systems.</p>
+                        <p>Whether it's building LLM-powered applications, designing data platforms, or securing AI infrastructure, I bring deep technical expertise and a bias for getting things shipped.</p>
+                        <div class="about__languages">
+                            <span class="lang-badge">🇪🇸 Spanish</span>
+                            <span class="lang-badge">🇬🇧 English</span>
+                            <span class="lang-badge">🏴󠁥󠁳󠁣󠁴󠁿 Catalan</span>
+                            <span class="lang-badge">🇯🇵 Japanese (basic)</span>
                         </div>
                     </div>
 
-                    <div class="about__buttons">
-                        <!--==================== Change your CV ====================-->
-                        <a download="" href="assets/pdf/CV_Ricard.pdf" class="button button--flex">
-                            Download CV <i class="uil uil-download-alt button__icon"></i>
-                        </a>
+                    <div class="about__stats">
+                        <div class="stat-card">
+                            <span class="stat-card__number">8+</span>
+                            <span class="stat-card__label">Years Experience</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-card__number">15+</span>
+                            <span class="stat-card__label">Projects Completed</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-card__number">10+</span>
+                            <span class="stat-card__label">Companies Worked</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-card__number">2</span>
+                            <span class="stat-card__label">Roles: Employee + Founder</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--==================== TRUSTED BY ====================-->
+        <!-- ===== TRUSTED BY ===== -->
         <section class="trusted section">
-            <h2 class="section__title">Trusted By</h2>
-            <span class="section__subtitle">Companies that trusted me</span>
+            <div class="container">
+                <h2 class="section__title">Trusted By</h2>
+                <span class="section__subtitle">Companies that have trusted my work</span>
 
-            <div class="trusted__container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!-- Add company logos here -->
-                    <div class="trusted__content grid swiper-slide">
-                        <a href="https://www.bitpanda.com" target="_blank" rel="noopener">
-                            <img src="assets/img/bitpanda-logo.png" alt="Bitpanda" class="trusted__img">
-                        </a>
-                    </div>
-                    <div class="trusted__content grid swiper-slide">
-                        <a href="https://www.inditex.com" target="_blank" rel="noopener">
-                            <img src="assets/img/inditex-logo.png" alt="Inditex" class="trusted__img">
-                        </a>
-                    </div>
-                    <div class="trusted__content grid swiper-slide">
-                        <a href="https://goin.app" target="_blank" rel="noopener">
-                            <img src="assets/img/goin-logo.png" alt="Goin" class="trusted__img">
-                        </a>
-                    </div>
-                    <div class="trusted__content grid swiper-slide">
-                        <a href="https://www.deliverymates.co.uk" target="_blank" rel="noopener">
-                            <img src="assets/img/delivery-mates-logo.png" alt="Delivery Mates" class="trusted__img">
-                        </a>
-                    </div>
-                    <div class="trusted__content grid swiper-slide">
-                        <a href="https://www.aishepherds.com" target="_blank" rel="noopener">
-                            <img src="assets/img/ai-shepherds-logo.png" alt="AI Shepherds" class="trusted__img">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                </div>
-                <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                </div>
-
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
-
-        <!--==================== SKILLS ====================-->
-        <section class="skills section" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My technical level</span>
-
-            <div class="skills__container container grid">
-                <div>
-                    <!--=============== SKILLS 1 ===============-->
-                    <div class="skills__content skills__open">
-                        <div class="skills__header">
-                            <i class="uil uil-brackets-curly skills__icon"></i>
-
-                            <div>
-                                <h1 class="skills__title">Data Engineer </h1>
-                                <span class="skills__subtitle">More than 6 years</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
+                <div class="trusted__container swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="trusted__slide swiper-slide">
+                            <span class="trusted__name">Checkatrade</span>
                         </div>
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Python</h3>
-                                    <span class="skills__number">100%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__python"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">SQL</h3>
-                                    <span class="skills__number">100%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__sql"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Data Modelling</h3>
-                                    <span class="skills__number">85%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__datamodelling"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Snowflake</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__snowflake"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Kafka</h3>
-                                    <span class="skills__number">60%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__kafka"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Data Analysis</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__dataanalysis"></span>
-                                </div>
-                            </div>
+                        <div class="trusted__slide swiper-slide">
+                            <span class="trusted__name">Zynap</span>
+                        </div>
+                        <div class="trusted__slide swiper-slide">
+                            <a href="https://www.bitpanda.com" target="_blank" rel="noopener">
+                                <img src="assets/img/bitpanda-logo.png" alt="Bitpanda" class="trusted__img">
+                            </a>
+                        </div>
+                        <div class="trusted__slide swiper-slide">
+                            <a href="https://www.inditex.com" target="_blank" rel="noopener">
+                                <img src="assets/img/inditex-logo.png" alt="Inditex" class="trusted__img">
+                            </a>
+                        </div>
+                        <div class="trusted__slide swiper-slide">
+                            <a href="https://goin.app" target="_blank" rel="noopener">
+                                <img src="assets/img/goin-logo.png" alt="Goin" class="trusted__img">
+                            </a>
+                        </div>
+                        <div class="trusted__slide swiper-slide">
+                            <a href="https://www.deliverymates.co.uk" target="_blank" rel="noopener">
+                                <img src="assets/img/delivery-mates-logo.png" alt="Delivery Mates" class="trusted__img">
+                            </a>
                         </div>
                     </div>
-
-                    <!--=============== SKILLS 2 ===============-->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-wall skills__icon"></i>
-
-                            <div>
-                                <h1 class="skills__title">Infrastructure and Cloud</h1>
-                                <span class="skills__subtitle">More than 3 years</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Terraform</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__terraform"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Docker</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__docker"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">AWS</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__aws"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">GCP</h3>
-                                    <span class="skills__number">85%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__gcp"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <!--=============== SKILLS 3 ===============-->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-swatchbook skills__icon"></i>
-
-                            <div>
-                                <h1 class="skills__title">Software Engineer</h1>
-                                <span class="skills__subtitle">More than 5 years</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Python</h3>
-                                    <span class="skills__number">100%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__python"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">SQL</h3>
-                                    <span class="skills__number">100%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__sql"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Java</h3>
-                                    <span class="skills__number">60%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__java"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Scala</h3>
-                                    <span class="skills__number">30%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__scala"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Microservice architecture</h3>
-                                    <span class="skills__number">60%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__microservices"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--=============== SKILLS 4 ===============-->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-presentation-check skills__icon"></i>
-
-                            <div>
-                                <h1 class="skills__title">Tech Lead</h1>
-                                <span class="skills__subtitle">More than 1 year</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Team Management</h3>
-                                    <span class="skills__number">40%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__teammamagement"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Communication</h3>
-                                    <span class="skills__number">95%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__communication"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Problem Solving</h3>
-                                    <span class="skills__number">100%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__problemsolving"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="swiper-button-next"><i class="uil uil-angle-right-b"></i></div>
+                    <div class="swiper-button-prev"><i class="uil uil-angle-left-b"></i></div>
                 </div>
             </div>
         </section>
 
-        <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section">
-            <h2 class="section__title">Qualification</h2>
-            <span class="section__subtitle">My personal journey</span>
-
-            <div class="qualification__container container">
-                <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target="#education">
-                        <i class="uil uil-graduation-cap qualification__icon"></i>
-                        Education
-                    </div>
-
-                    <div class="qualification__button button--flex" data-target="#work">
-                        <i class="uil uil-briefcase-alt qualification__icon"></i>
-                        Work
-                    </div>
-                </div>
-
-                <div class="qualification__sections">
-                    <!--=============== QUALIFICATION CONTENT 1 ===============-->
-                    <div class="qualification__content qualification__active" data-content id="education">
-                        <!--=============== QUALIFICATION 1 ===============-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Master of Science in Computer Engineering and Machine
-                                    Learning</h3>
-                                <span class="qualification__subtitle">Universitat Politècnica de Catalunya</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2017 - 2019
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <!--=============== QUALIFICATION 2 ===============-->
-                        <div class="qualification__data">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">Bacherlor Degree in Computer Engineering</h3>
-                                <span class="qualification__subtitle">Universitat Politècnica de Catalunya</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2013-2017
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--=============== QUALIFICATION CONTENT 2 ===============-->
-                    <div class="qualification__content" data-content id="work">
-                        <!--=============== QUALIFICATION 1 ===============-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Senior Data Engineer</h3>
-                                <span class="qualification__subtitle">Bitpanda - Spain</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2023-Present
-                                </div>
-                            </div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__title">Freelance Data and Software Engineer</h3>
-                                <span class="qualification__subtitle">Spain</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2018-Present
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--=============== QUALIFICATION 2 ===============-->
-                        <div class="qualification__data">
-                            <div></div>
-
-                            <div class="qualification__time">
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">Data Engineer and Tech Lead</h3>
-                                <span class="qualification__subtitle">Inditex - Spain</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2022-2023
-                                </div>
-                            </div>
-                        </div>
-                        <!--=============== QUALIFICATION 3 ===============-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Data Engineer</h3>
-                                <span class="qualification__subtitle">Goin - Spain</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2021-2022
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-                        <!--=============== QUALIFICATION 4 ===============-->
-                        <div class="qualification__data">
-                            <div></div>
-
-                            <div class="qualification__time">
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">Head of Data</h3>
-                                <span class="qualification__subtitle">Delivery Mates - UK</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2019-2021
-                                </div>
-                            </div>
-                        </div>
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Data Engineer</h3>
-                                <span class="qualification__subtitle">Reby - Spain</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2019-2020
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== SERVICES ====================-->
+        <!-- ===== SERVICES ===== -->
         <section class="services section" id="services">
-            <h2 class="section__title">Services</h2>
-            <span class="section__subtitle">What I offer</span>
+            <div class="container">
+                <h2 class="section__title">What I Do</h2>
+                <span class="section__subtitle">Services I offer as an independent engineer and consultant</span>
 
-            <div class="services__container container grid">
-                <!--=============== SERVICES 1 ===============-->
-                <div class="services__content">
-                    <div>
-                        <i class="uil uil-swatchbook skills__icon"></i>
-                        <h3 class="services__title">Software <br> Engineer</h3>
-                    </div>
-                    <span class="button button--flex button--small button--link services__button">
-                        View More
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">Software <br> Engineer</h4>
-                            <i class="uil uil-times services__modal-close"></i>
-
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I create your API.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I design and implement your microservice architecture.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I contribute to your codebase.</p>
-                                </li>
-                            </ul>
+                <div class="services__grid">
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <i class="fa-solid fa-brain"></i>
                         </div>
+                        <h3 class="service-card__title">AI Engineering</h3>
+                        <p class="service-card__description">Design and build production-grade AI systems — from LLM integrations and RAG pipelines to model deployment and MLOps infrastructure.</p>
+                        <ul class="service-card__list">
+                            <li><i class="uil uil-check-circle"></i> LLM integrations & AI agents</li>
+                            <li><i class="uil uil-check-circle"></i> RAG pipelines & vector databases</li>
+                            <li><i class="uil uil-check-circle"></i> ML model deployment & MLOps</li>
+                            <li><i class="uil uil-check-circle"></i> AI-powered APIs & microservices</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card service-card--featured">
+                        <div class="service-card__icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="service-card__title">Cybersecurity</h3>
+                        <p class="service-card__description">Identify and mitigate security risks in your AI and data infrastructure. Web exploitation, penetration testing, and security architecture reviews.</p>
+                        <ul class="service-card__list">
+                            <li><i class="uil uil-check-circle"></i> AI security & adversarial testing</li>
+                            <li><i class="uil uil-check-circle"></i> Web application penetration testing</li>
+                            <li><i class="uil uil-check-circle"></i> Security architecture review</li>
+                            <li><i class="uil uil-check-circle"></i> Secure AI system design</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3 class="service-card__title">Data Engineering</h3>
+                        <p class="service-card__description">Build robust data foundations that power AI systems. Data pipelines, warehousing, modeling, and real-time streaming architectures.</p>
+                        <ul class="service-card__list">
+                            <li><i class="uil uil-check-circle"></i> Data pipeline architecture</li>
+                            <li><i class="uil uil-check-circle"></i> Real-time & batch processing</li>
+                            <li><i class="uil uil-check-circle"></i> Data modeling & warehousing</li>
+                            <li><i class="uil uil-check-circle"></i> Cloud data platforms (AWS/GCP)</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!--=============== SERVICES 2 ===============-->
-                <div class="services__content">
-                    <div>
-                        <i class="uil uil-brackets-curly skills__icon"></i>
-                        <h3 class="services__title">Data <br> Engineer</h3>
-                    </div>
+        <!-- ===== SKILLS ===== -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">Technologies and tools I work with</span>
 
-                    <span class="button button--flex button--small button--link services__button">
-                        View More
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">Data <br> Engineer</h4>
-                            <i class="uil uil-times services__modal-close"></i>
-
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I create data pipelines.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I create the architecture needed for a data platform.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I create data models following the business logic giving key KPI's to the
-                                        business</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I evaluate the quality of your data.</p>
-                                </li>
-                            </ul>
+                <div class="skills__container">
+                    <div class="skill-group">
+                        <h3 class="skill-group__title"><i class="fa-solid fa-brain"></i> AI / Machine Learning</h3>
+                        <div class="skill-group__tags">
+                            <span class="skill-tag skill-tag--primary">Python</span>
+                            <span class="skill-tag skill-tag--primary">LLMs</span>
+                            <span class="skill-tag">RAG</span>
+                            <span class="skill-tag">LangChain</span>
+                            <span class="skill-tag">OpenAI API</span>
+                            <span class="skill-tag">Hugging Face</span>
+                            <span class="skill-tag">scikit-learn</span>
+                            <span class="skill-tag">MLOps</span>
+                            <span class="skill-tag">Vector DBs</span>
                         </div>
                     </div>
-                </div>
 
-                <!--=============== SERVICES 3 ===============-->
-                <div class="services__content">
-                    <div>
-                        <i class="uil uil-pen services__icon"></i>
-                        <h3 class="services__title">Tech <br> Lead</h3>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title"><i class="fa-solid fa-shield-halved"></i> Cybersecurity</h3>
+                        <div class="skill-group__tags">
+                            <span class="skill-tag skill-tag--primary">Web Exploitation</span>
+                            <span class="skill-tag skill-tag--primary">Penetration Testing</span>
+                            <span class="skill-tag">Hack The Box</span>
+                            <span class="skill-tag">OWASP</span>
+                            <span class="skill-tag">Burp Suite</span>
+                            <span class="skill-tag">AI Security</span>
+                            <span class="skill-tag">Threat Modeling</span>
+                        </div>
                     </div>
 
-                    <span class="button button--flex button--small button--link services__button">
-                        View More
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </span>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title"><i class="fa-solid fa-database"></i> Data Engineering</h3>
+                        <div class="skill-group__tags">
+                            <span class="skill-tag skill-tag--primary">SQL</span>
+                            <span class="skill-tag skill-tag--primary">Snowflake</span>
+                            <span class="skill-tag">Apache Kafka</span>
+                            <span class="skill-tag">dbt</span>
+                            <span class="skill-tag">Airflow</span>
+                            <span class="skill-tag">Databricks</span>
+                            <span class="skill-tag">Spark</span>
+                            <span class="skill-tag">Data Modeling</span>
+                        </div>
+                    </div>
 
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">Branding <br> Designer</h4>
-                            <i class="uil uil-times services__modal-close"></i>
-
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I create a roadmap for your project.</p>
-
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I conduct interviews in order to get the best talent possible for the team</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I communicate to all the stakeholders of the business.</p>
-                                </li>
-                            </ul>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title"><i class="fa-solid fa-cloud"></i> Cloud & Infrastructure</h3>
+                        <div class="skill-group__tags">
+                            <span class="skill-tag skill-tag--primary">AWS</span>
+                            <span class="skill-tag skill-tag--primary">GCP</span>
+                            <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Microservices</span>
+                            <span class="skill-tag">REST APIs</span>
+                            <span class="skill-tag">Java</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--==================== PORTFOLIO ====================-->
+        <!-- ===== EXPERIENCE ===== -->
+        <section class="experience section" id="experience">
+            <div class="container">
+                <h2 class="section__title">Experience</h2>
+                <span class="section__subtitle">My professional journey</span>
+
+                <div class="experience__tabs">
+                    <button class="exp-tab exp-tab--active" data-target="work">
+                        <i class="uil uil-briefcase-alt"></i> Work
+                    </button>
+                    <button class="exp-tab" data-target="education">
+                        <i class="uil uil-graduation-cap"></i> Education
+                    </button>
+                </div>
+
+                <!-- Work Timeline -->
+                <div class="timeline" id="work" data-content>
+
+                    <div class="timeline__item">
+                        <div class="timeline__dot timeline__dot--current"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__header">
+                                <div>
+                                    <h3 class="timeline__role">Senior AI Engineer</h3>
+                                    <span class="timeline__company">Checkatrade · London, UK (Remote)</span>
+                                </div>
+                                <span class="timeline__date">Apr 2026 — Present</span>
+                            </div>
+                            <p class="timeline__desc">Building AI-powered features and systems for one of the UK's leading home improvement platforms.</p>
+                            <div class="timeline__tags">
+                                <span>AI Engineering</span><span>LLMs</span><span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__header">
+                                <div>
+                                    <h3 class="timeline__role">AI & Cybersecurity Engineer</h3>
+                                    <span class="timeline__company">Zynap · Barcelona (Founder)</span>
+                                </div>
+                                <span class="timeline__date">2024 — Present</span>
+                            </div>
+                            <p class="timeline__desc">Founded Zynap to deliver AI engineering and cybersecurity consulting to startups and scale-ups. Specialising in secure AI system design and implementation.</p>
+                            <div class="timeline__tags">
+                                <span>AI</span><span>Cybersecurity</span><span>Consulting</span><span>Founder</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__header">
+                                <div>
+                                    <h3 class="timeline__role">Senior Data Engineer</h3>
+                                    <span class="timeline__company">Bitpanda · Remote (Spain)</span>
+                                </div>
+                                <span class="timeline__date">2023 — 2025</span>
+                            </div>
+                            <p class="timeline__desc">Led the design and implementation of Bitpanda's data platform. Mentored team members and managed interns providing technical guidance.</p>
+                            <div class="timeline__tags">
+                                <span>Data Platform</span><span>Snowflake</span><span>Python</span><span>Tech Lead</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__header">
+                                <div>
+                                    <h3 class="timeline__role">Freelance Data & Software Engineer</h3>
+                                    <span class="timeline__company">Independent · Spain</span>
+                                </div>
+                                <span class="timeline__date">2018 — Present</span>
+                            </div>
+                            <p class="timeline__desc">Delivering data engineering and software projects for clients across fintech, e-commerce, and logistics sectors.</p>
+                            <div class="timeline__tags">
+                                <span>Data Engineering</span><span>Python</span><span>AWS</span><span>Consulting</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__header">
+                                <div>
+                                    <h3 class="timeline__role">Data Engineer & Tech Lead</h3>
+                                    <span class="timeline__company">Inditex · Spain</span>
+                                </div>
+                                <span class="timeline__date">2022 — 2023</span>
+                            </div>
+                            <p class="timeline__desc">Designed data models for the Sustainability area, providing key insights to business and regulators.</p>
+                            <div class="timeline__tags">
+                                <span>Data Modeling</span><span>Tech Lead</span><span>GCP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__header">
+                                <div>
+                                    <h3 class="timeline__role">Data Engineer</h3>
+                                    <span class="timeline__company">Goin · Spain</span>
+                                </div>
+                                <span class="timeline__date">2021 — 2022</span>
+                            </div>
+                            <p class="timeline__desc">Built data pipelines and a financial recommendations API used by the product team to improve the app experience.</p>
+                            <div class="timeline__tags">
+                                <span>Python</span><span>Data Pipelines</span><span>API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__header">
+                                <div>
+                                    <h3 class="timeline__role">Head of Data</h3>
+                                    <span class="timeline__company">Delivery Mates · London, UK</span>
+                                </div>
+                                <span class="timeline__date">2019 — 2021</span>
+                            </div>
+                            <p class="timeline__desc">Led all data initiatives from scratch — built the data infrastructure, pipelines, and team.</p>
+                            <div class="timeline__tags">
+                                <span>Data Leadership</span><span>AWS</span><span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Education Timeline -->
+                <div class="timeline timeline--hidden" id="education" data-content>
+
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__header">
+                                <div>
+                                    <h3 class="timeline__role">MSc Computer Engineering & Machine Learning</h3>
+                                    <span class="timeline__company">Universitat Politècnica de Catalunya</span>
+                                </div>
+                                <span class="timeline__date">2017 — 2019</span>
+                            </div>
+                            <p class="timeline__desc">European Master's degree. Thesis: "Travel time forecasting using probe vehicle data on freeways" — Grade: 9.5/10</p>
+                            <div class="timeline__tags">
+                                <span>Machine Learning</span><span>Data Science</span><span>Distributed Systems</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__card">
+                            <div class="timeline__header">
+                                <div>
+                                    <h3 class="timeline__role">BSc Computer Engineering</h3>
+                                    <span class="timeline__company">Universitat Politècnica de Catalunya</span>
+                                </div>
+                                <span class="timeline__date">2013 — 2017</span>
+                            </div>
+                            <p class="timeline__desc">Foundation in computer science, algorithms, software engineering, and systems architecture.</p>
+                            <div class="timeline__tags">
+                                <span>Computer Science</span><span>Software Engineering</span><span>Algorithms</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CERTIFICATIONS ===== -->
+        <section class="certs section" id="certifications">
+            <div class="container">
+                <h2 class="section__title">Certifications</h2>
+                <span class="section__subtitle">Credentials and continuous learning</span>
+
+                <div class="certs__grid">
+                    <div class="cert-card cert-card--highlight">
+                        <div class="cert-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="cert-card__body">
+                            <h3 class="cert-card__title">HTB Certified Web Exploitation Specialist</h3>
+                            <span class="cert-card__issuer">Hack The Box</span>
+                            <span class="cert-card__date">April 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-card__icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="cert-card__body">
+                            <h3 class="cert-card__title">Fundamentals of the Databricks Lakehouse Platform</h3>
+                            <span class="cert-card__issuer">Databricks</span>
+                            <span class="cert-card__date">December 2022</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-card__icon"><i class="fa-solid fa-chart-bar"></i></div>
+                        <div class="cert-card__body">
+                            <h3 class="cert-card__title">Big Data Analytics</h3>
+                            <span class="cert-card__issuer">Barcelona Supercomputing Center</span>
+                            <span class="cert-card__date">February 2019</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-card__icon"><i class="fa-solid fa-robot"></i></div>
+                        <div class="cert-card__body">
+                            <h3 class="cert-card__title">Applied Machine Learning in Python</h3>
+                            <span class="cert-card__issuer">Coursera · University of Michigan</span>
+                            <span class="cert-card__date">July 2018</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-card__icon"><i class="fa-solid fa-trophy"></i></div>
+                        <div class="cert-card__body">
+                            <h3 class="cert-card__title">HackCorona Winner — DIY Ventilator Chatbot</h3>
+                            <span class="cert-card__issuer">Fraunhofer Institute Prize</span>
+                            <span class="cert-card__date">March 2020</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-card__icon"><i class="fa-solid fa-language"></i></div>
+                        <div class="cert-card__body">
+                            <h3 class="cert-card__title">Cambridge Certificate in Advanced English (CAE)</h3>
+                            <span class="cert-card__issuer">Cambridge Assessment English</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PORTFOLIO ===== -->
         <section class="portfolio section" id="portfolio">
-            <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">Most recent work</span>
+            <div class="container">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Selected projects</span>
 
-            <div class="portfolio__container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!--=============== PORTFOLIO 1 ===============-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio1.jpeg" alt="" class="portfolio__img">
+                <div class="portfolio__container swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="portfolio__slide swiper-slide">
+                            <img src="assets/img/portfolio4.png" alt="Bitpanda Data Platform" class="portfolio__img">
+                            <div class="portfolio__info">
+                                <h3 class="portfolio__title">Bitpanda Data Platform</h3>
+                                <p class="portfolio__desc">Led the design and implementation of the data platform for Bitpanda, a leading European crypto exchange. Mentored the team and managed interns.</p>
+                                <a href="https://www.bitpanda.com" target="_blank" class="btn btn--small">
+                                    View <i class="uil uil-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
 
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Data API - Saving Insights</h3>
-                            <p class="portfolio__description">API providing financial recommendations based on your
-                                financial activity</p>
-                            <a href="https://goin.app/en/home/"
-                                class="button button--flex button--small portfolio__button">
-                                Goin
-                            </a>
+                        <div class="portfolio__slide swiper-slide">
+                            <img src="assets/img/portfolio3.png" alt="Inditex Sustainability" class="portfolio__img">
+                            <div class="portfolio__info">
+                                <h3 class="portfolio__title">Inditex Sustainability Data Models</h3>
+                                <p class="portfolio__desc">Designed data models for the Sustainability area of Inditex, giving key insights to the business and regulators.</p>
+                                <a href="https://www.inditex.com" target="_blank" class="btn btn--small">
+                                    View <i class="uil uil-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio__slide swiper-slide">
+                            <img src="assets/img/portfolio1.jpeg" alt="Goin Data API" class="portfolio__img">
+                            <div class="portfolio__info">
+                                <h3 class="portfolio__title">Data API — Saving Insights</h3>
+                                <p class="portfolio__desc">API providing financial recommendations based on user activity, powering the Goin fintech app's core product experience.</p>
+                                <a href="https://goin.app/en/home/" target="_blank" class="btn btn--small">
+                                    View <i class="uil uil-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio__slide swiper-slide">
+                            <img src="assets/img/portfolio2.png" alt="IoT Pipelines" class="portfolio__img">
+                            <div class="portfolio__info">
+                                <h3 class="portfolio__title">IoT Real-Time Data Pipelines</h3>
+                                <p class="portfolio__desc">Designed real-time data pipelines and an API from scratch, getting data from PCBs attached to high-tech industrial machines.</p>
+                                <a href="https://www.vixion360.com/" target="_blank" class="btn btn--small">
+                                    View <i class="uil uil-arrow-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <!--=============== PORTFOLIO 2 ===============-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio2.png" alt="" class="portfolio__img">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">IoT real-time data pipelines</h3>
-                            <p class="portfolio__description">Designed from scratch real-time data pipelines and an API
-                                getting data from PCB's attached to high-tech industrial machines. </p>
-                            <a href="https://www.vixion360.com/"
-                                class="button button--flex button--small portfolio__button">
-                                Vixion
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!--=============== PORTFOLIO 3 ===============-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio3.png" alt="" class="portfolio__img">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Inditex Sustainability Data Models</h3>
-                            <p class="portfolio__description">Designed data models for the Sustainability area of
-                                Inditex, giving key insights to the business and regulators. </p>
-                            <a href="https://www.inditex.com"
-                                class="button button--flex button--small portfolio__button">
-                                Inditex
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!--=============== PORTFOLIO 4 ===============-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio4.png" alt="" class="portfolio__img">
-                    
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Bitpanda Data Platform</h3>
-                            <p class="portfolio__description">Led the design and implementation of the data platform for Bitpanda, a leading European crypto exchange. Mentored the team and directly managed interns providing technical guidance. </p>
-                            <a href="https://www.bitpanda.com" class="button button--flex button--small portfolio__button">
-                                Bitpanda
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
+                    <div class="swiper-button-next"><i class="uil uil-angle-right-b"></i></div>
+                    <div class="swiper-button-prev"><i class="uil uil-angle-left-b"></i></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-
-                <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                </div>
-                <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                </div>
-
-                <div class="swiper-pagination"></div>
             </div>
         </section>
 
-        <!--==================== PROJECT IN MIND ====================-->
-        <!-- <section class="project section">
-            <div class="project__bg">
-                <div class="project__container container grid">
-                    <div class="project__data">
-                        <h2 class="project__title">You have a new project</h2>
-                        <p class="project__description">Contact me now and get a 30% discount on your new project.</p>
-                        <a href="#" class="button button--flex button--white">
-                            Contact Me
-                            <i class="uil uil-message button__icon"></i>
+        <!-- ===== TESTIMONIALS ===== -->
+        <section class="testimonials section">
+            <div class="container">
+                <h2 class="section__title">Testimonials</h2>
+                <span class="section__subtitle">What people I've worked with say</span>
+
+                <div class="testimonials__container swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__slide swiper-slide">
+                            <div class="testimonial__card">
+                                <div class="testimonial__quote"><i class="fa-solid fa-quote-left"></i></div>
+                                <p class="testimonial__text">Ricard has been leading initiatives in data ETLs, building data pipelines from scratch and a data API that is being used by our Product team to improve the experience of our users in the app. I thank him for that, recommend working with him to anyone interested and remain excited to see what he does in the future!</p>
+                                <div class="testimonial__author">
+                                    <img src="assets/img/testimonial1.jpeg" alt="Iago Novoa" class="testimonial__avatar">
+                                    <div>
+                                        <h4 class="testimonial__name">Iago Novoa</h4>
+                                        <span class="testimonial__role">CDO at Goin</span>
+                                    </div>
+                                    <div class="testimonial__stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__slide swiper-slide">
+                            <div class="testimonial__card">
+                                <div class="testimonial__quote"><i class="fa-solid fa-quote-left"></i></div>
+                                <p class="testimonial__text">Ricard is a brilliant engineer, not only mastering the technical languages and tools but also holding a powerful combination of soft skills which make it easy and pleasant to work with him. He did an amazing job at Delivery Mates.</p>
+                                <div class="testimonial__author">
+                                    <img src="assets/img/testimonial2.jpg" alt="Ivan Belmonte" class="testimonial__avatar">
+                                    <div>
+                                        <h4 class="testimonial__name">Ivan Belmonte</h4>
+                                        <span class="testimonial__role">CTO at Delivery Mates</span>
+                                    </div>
+                                    <div class="testimonial__stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-testimonial"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section__title">Get In Touch</h2>
+                <span class="section__subtitle">Let's build something together</span>
+
+                <div class="contact__container">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <div class="contact__item-icon"><i class="uil uil-envelope"></i></div>
+                            <div>
+                                <h3 class="contact__item-title">Email</h3>
+                                <a href="mailto:ricard.gardella.garcia@gmail.com" class="contact__item-value">ricard.gardella.garcia@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__item-icon"><i class="uil uil-map-marker"></i></div>
+                            <div>
+                                <h3 class="contact__item-title">Location</h3>
+                                <span class="contact__item-value">Barcelona, Spain</span>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__item-icon"><i class="uil uil-briefcase-alt"></i></div>
+                            <div>
+                                <h3 class="contact__item-title">Open to</h3>
+                                <span class="contact__item-value">Freelance · Consulting · Full-time</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__actions">
+                        <a href="#" class="btn btn--primary btn--large"
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ricardgardellagarcia/0ne-on-one-30-minute'}); return false;">
+                            <i class="uil uil-calendar-alt"></i> Schedule a Call
+                        </a>
+                        <a href="mailto:ricard.gardella.garcia@gmail.com" class="btn btn--outline btn--large">
+                            <i class="uil uil-fast-mail"></i> Send Email
                         </a>
                     </div>
-
-                    <img src="assets/img/project.png" alt="" class="project__img">
                 </div>
             </div>
-        </section> -->
-
-        <!--==================== TESTIMONIAL ====================-->
-        <section class="testimonial section">
-            <h2 class="section__title">Testimonial</h2>
-            <span class="section__subtitle">My client saying</span>
-
-            <div class="testimonial__container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!--=============== TESTIMONIAL 1 ===============-->
-                    <div class="testimonial__content swiper-slide">
-                        <div class="testimonial__data">
-                            <div class="testimonial__header">
-                                <img src="assets/img/testimonial1.jpeg" alt="" class="testimonial__img">
-
-                                <div>
-                                    <h3 class="testimonial__name">Iago Novoa</h3>
-                                    <span class="testimonial__client">CDO at Goin</span>
-                                </div>
-                            </div>
-
-                            <div>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                            </div>
-                        </div>
-
-                        <p class="testimonial__description">Ricard has been leading initiatives in data ETLs, building
-                            data pipelines from scratch and a data API
-                            that is being used by our Product team to improve the experience of our users in the app. I
-                            thank him for that,
-                            recommend working with him to anyone interested and remain excited to see what he does in
-                            the future!
-                        </p>
-                    </div>
-
-                    <!--=============== TESTIMONIAL 2 ===============-->
-                    <div class="testimonial__content swiper-slide">
-                        <div class="testimonial__data">
-                            <div class="testimonial__header">
-                                <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__img">
-
-                                <div>
-                                    <h3 class="testimonial__name">Ivan Belmonte</h3>
-                                    <span class="testimonial__client">CTO at Delivery Mates</span>
-                                </div>
-                            </div>
-
-                            <div>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                            </div>
-                        </div>
-
-                        <p class="testimonial__description">Ricard is a brilliant engineer, not only mastering the
-                            technical languages and tools but also holding a powerful
-                            combination of soft skills which make it easy and pleasant to work with him. He did an
-                            amazing job at Delivery Mates.
-                        </p>
-                    </div>
-                </div>
-                <div class="swiper-pagination swiper-pagination-testimonial"></div>
-            </div>
-        </section>
-
-        <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Contact Me</h2>
-            <span class="section__subtitle">Get in touch</span>
-
-            <div class="contact__container container grid">
-                <div>
-                    <!-- <div class="contact__information">
-                        <i class="uil uil-phone contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Call Me</h3>
-                            <span class="contact__subtitle">999-777-666</span>
-                        </div>
-                    </div> -->
-
-                    <div class="contact__information">
-                        <i class="uil uil-envelope contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Email</h3>
-                            <span class="contact__subtitle">ricard.gardella.garcia@gmail.com</span>
-                        </div>
-                    </div>
-
-                    <div class="contact__information">
-                        <i class="uil uil-map-marker contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contact__subtitle">Barcelona - Spain</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact__buttons">
-                    <a href="#" class="button button--flex"
-                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ricardgardellagarcia/0ne-on-one-30-minute'}); return false;">
-                        Schedule a meeting
-                        <i class="uil uil-calendar-alt button__icon"></i>
-                    </a>
-                    <div style="margin-bottom: var(--mb-1)"></div>
-                    <a href="mailto:ricardgardellagarcia@gmail.com" class="button button--flex button--secondary">
-                        Send me an email
-                        <i class="uil uil-fast-mail button__icon"></i>
-                    </a>
-                </div>
-                <!-- <form action="mailto:ricardgardellagarcia@gmail.com?subject=project&message=message" class="contact__form grid">
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input" id="name" required>
-                        </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Email</label>
-                            <input type="email" class="contact__input" id="email" required>
-                        </div>
-                    </div>
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Project</label>
-                        <input type="text" class="contact__input" id = "project" required>
-                    </div>
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input" id = "message" required></textarea>
-                    </div>
-                </form> -->
-            </div>
-
         </section>
     </main>
 
-    <!--==================== FOOTER ====================-->
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
-        <div class="footer__bg">
-            <div class="footer__container container grid">
-                <div>
-                    <h1 class="footer__title">Ricard Gardella</h1>
-                    <span class="footer__subtitle">AI Data and Software Engineer</span>
-                </div>
-
-                <ul class="footer__links">
-                    <li>
-                        <a href="#services" class="footer__link">Services</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="footer__link">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="footer__link">Contact</a>
-                    </li>
-                </ul>
-
-                <div class="footer__socials">
-                    <a href="https://github.com/ricardgardella" target="_blank" class="footer__social">
-                        <i class="uil uil-github-alt"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ricard-gardella-garcia/" target="_blank"
-                        class="footer__social">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-                    <a href="https://twitter.com/ricardgardella" target="_blank" class="footer__social">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                </div>
+        <div class="footer__inner container">
+            <div class="footer__brand">
+                <span class="footer__logo"><span class="nav__logo-bracket">&lt;</span>RG<span class="nav__logo-bracket">/&gt;</span></span>
+                <span class="footer__tagline">Senior AI Engineer & Cybersecurity Specialist</span>
             </div>
 
-            <p class="footer__copy">&#169; Ricard Gardella Garcia. All right reserved</p>
+            <ul class="footer__links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="footer__socials">
+                <a href="https://github.com/ricardgardella" target="_blank"><i class="uil uil-github-alt"></i></a>
+                <a href="https://www.linkedin.com/in/ricard-gardella-garcia/" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+                <a href="https://x.com/RicardGardella" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
         </div>
+        <p class="footer__copy">© 2026 Ricard Gardella Garcia. All rights reserved.</p>
     </footer>
 
-    <!--========== SCROLL TOP ==========-->
     <a href="#" class="scrollup" id="scroll-top">
-        <i class="uil uil-arrow-up scrollup__icon"></i>
+        <i class="uil uil-arrow-up"></i>
     </a>
 
-    <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
-
-    <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
 </body>
 
