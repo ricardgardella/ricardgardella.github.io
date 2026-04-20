@@ -569,15 +569,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     border-color: rgba(34, 211, 238, 0.4);
 }
 
-.trusted__pill--dark {
-    background: #111827;
-    border-color: rgba(255, 255, 255, 0.1);
-}
-
-.trusted__pill--dark:hover {
-    border-color: rgba(34, 211, 238, 0.5);
-}
-
 .trusted__img {
     height: 32px;
     width: auto;
