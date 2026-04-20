@@ -874,13 +874,18 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     height: 200px;
     overflow: hidden;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Image cards — photo fills cover absolutely */
 .pcard__img {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
     transition: transform 0.5s ease;
 }
 
@@ -892,18 +897,28 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     z-index: 1;
 }
 
-.pcard__cover--crypto .pcard__overlay {
-    background: linear-gradient(to top, rgba(59,7,100,0.85) 0%, rgba(59,7,100,0.3) 50%, transparent 100%);
+.pcard__cover--crypto  { background: linear-gradient(135deg, #1a0533 0%, #3b0764 60%, #4c1d95 100%); }
+.pcard__cover--green   { background: linear-gradient(135deg, #022c22 0%, #064e3b 60%, #065f46 100%); }
+.pcard__cover--cyan    { background: linear-gradient(135deg, #0c2340 0%, #0e4a6e 60%, #0369a1 100%); }
+.pcard__cover--orange  { background: linear-gradient(135deg, #431407 0%, #7c2d12 60%, #9a3412 100%); }
+.pcard__cover--violet  { background: linear-gradient(135deg, #1e1b4b 0%, #3730a3 60%, #4338ca 100%); }
+.pcard__cover--rose    { background: linear-gradient(135deg, #4c0519 0%, #9f1239 60%, #be123c 100%); }
+
+.pcard__cover--crypto .pcard__overlay  { background: linear-gradient(to top, rgba(59,7,100,0.85) 0%, rgba(59,7,100,0.3) 50%, transparent 100%); }
+.pcard__cover--green .pcard__overlay   { background: linear-gradient(to top, rgba(6,78,59,0.85) 0%, rgba(6,78,59,0.3) 50%, transparent 100%); }
+.pcard__cover--cyan .pcard__overlay    { background: linear-gradient(to top, rgba(3,105,161,0.85) 0%, rgba(3,105,161,0.3) 50%, transparent 100%); }
+.pcard__cover--orange .pcard__overlay  { background: linear-gradient(to top, rgba(124,45,18,0.85) 0%, rgba(124,45,18,0.3) 50%, transparent 100%); }
+
+/* Icon cards — icon centered in gradient */
+.pcard__cover-icon {
+    font-size: 3.75rem;
+    opacity: 0.85;
+    position: relative;
+    z-index: 2;
 }
-.pcard__cover--green .pcard__overlay {
-    background: linear-gradient(to top, rgba(6,78,59,0.85) 0%, rgba(6,78,59,0.3) 50%, transparent 100%);
-}
-.pcard__cover--cyan .pcard__overlay {
-    background: linear-gradient(to top, rgba(3,105,161,0.85) 0%, rgba(3,105,161,0.3) 50%, transparent 100%);
-}
-.pcard__cover--orange .pcard__overlay {
-    background: linear-gradient(to top, rgba(124,45,18,0.85) 0%, rgba(124,45,18,0.3) 50%, transparent 100%);
-}
+
+.pcard__cover--violet .pcard__cover-icon { color: #a5b4fc; }
+.pcard__cover--rose   .pcard__cover-icon { color: #fda4af; }
 
 .pcard__company-badge {
     position: absolute;
@@ -946,6 +961,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .pcard__tag--green  { color: #6ee7b7; border-color: rgba(110,231,183,0.3); background: rgba(110,231,183,0.08); }
 .pcard__tag--cyan   { color: #7dd3fc; border-color: rgba(125,211,252,0.3); background: rgba(125,211,252,0.08); }
 .pcard__tag--orange { color: #fdba74; border-color: rgba(253,186,116,0.3); background: rgba(253,186,116,0.08); }
+.pcard__tag--violet { color: #a5b4fc; border-color: rgba(165,180,252,0.3); background: rgba(165,180,252,0.08); }
+.pcard__tag--rose   { color: #fda4af; border-color: rgba(253,164,175,0.3); background: rgba(253,164,175,0.08); }
 
 .pcard__title {
     font-size: 1.1rem;
