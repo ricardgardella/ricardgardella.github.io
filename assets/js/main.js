@@ -22,18 +22,6 @@ document.querySelectorAll('.exp-tab').forEach(tab => {
 });
 
 /* ===== SWIPERS ===== */
-new Swiper('.portfolio__container', {
-    loop: true,
-    navigation: {
-        nextEl: '.portfolio__container .swiper-button-next',
-        prevEl: '.portfolio__container .swiper-button-prev',
-    },
-    pagination: {
-        el: '.portfolio__container .swiper-pagination',
-        clickable: true,
-    },
-});
-
 new Swiper('.testimonials__container', {
     loop: true,
     grabCursor: true,
