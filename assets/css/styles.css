@@ -92,6 +92,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     margin-bottom: 0.5rem;
 }
 
+.section__title::before {
+    content: "> ";
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-weight: 500;
+    opacity: 0.75;
+}
+
 .section__subtitle {
     display: block;
     text-align: center;
@@ -371,6 +379,18 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .hero__name-accent { color: var(--accent); }
 
+.hero__cursor {
+    display: inline-block;
+    margin-left: 0.1em;
+    color: var(--accent);
+    font-weight: 400;
+    animation: cursor-blink 1.1s steps(2, start) infinite;
+}
+
+@keyframes cursor-blink {
+    50% { opacity: 0; }
+}
+
 .hero__title {
     font-size: clamp(1.1rem, 3vw, 1.5rem);
     font-weight: 400;
@@ -430,6 +450,24 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     width: 260px;
     height: 260px;
     flex-shrink: 0;
+}
+
+.hero__img-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.22) 0,
+        rgba(0, 0, 0, 0.22) 1px,
+        transparent 1px,
+        transparent 3px
+    );
+    mix-blend-mode: overlay;
+    opacity: 0.55;
+    pointer-events: none;
+    z-index: 2;
 }
 
 .hero__img {
