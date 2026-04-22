@@ -22,20 +22,6 @@ document.querySelectorAll('.exp-tab').forEach(tab => {
 });
 
 /* ===== SWIPERS ===== */
-new Swiper('.testimonials__container', {
-    loop: true,
-    grabCursor: true,
-    spaceBetween: 24,
-    pagination: {
-        el: '.swiper-pagination-testimonial',
-        clickable: true,
-        dynamicBullets: true,
-    },
-    breakpoints: {
-        768: { slidesPerView: 2 },
-    },
-});
-
 new Swiper('.trusted__container', {
     loop: true,
     spaceBetween: 48,
