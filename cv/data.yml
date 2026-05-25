@@ -1,0 +1,109 @@
+# Single source of truth for the CV. Edit here, then run `python3 cv/build.py`.
+
+name: Ricard Gardella
+title: AI Engineer & Cybersecurity Specialist
+location: Barcelona, Spain
+email: ricard.gardella.garcia@gmail.com
+
+links:
+  - { label: ricardgardella.com, url: "https://ricardgardella.com" }
+  - { label: linkedin.com/in/ricard-gardella-garcia, url: "https://www.linkedin.com/in/ricard-gardella-garcia/" }
+  - { label: github.com/ricardgardella, url: "https://github.com/ricardgardella" }
+
+summary: >
+  Senior AI engineer with 10+ years building intelligent, secure, data-driven systems across
+  fintech, crypto, cybersecurity, retail, and logistics. Ships LLM-powered applications in production and breaks
+  them on weekends through bug bounties and CTF. 
+
+experience:
+  - role: Senior AI Engineer
+    company: Checkatrade
+    location: London, UK (Remote)
+    dates: Apr 2026 — Present
+    bullets:
+      - Building AI-powered features for the UK's leading home-improvement platform — LLMs, RAG, MCP, A2A, ADK, and multi-agent workflows in production.
+    tech: [Python, AWS, LLMs, RAG, MCP, A2A, ADK, Agents, Terraform, Kubernetes, Docker, CI/CD, Digger, DataDog, ArgoCD, GCP]
+
+  - role: Lead AI Engineer, Cybersecurity
+    company: Zynap
+    location: Barcelona, Spain (Hybrid)
+    dates: Oct 2024 — May 2026
+    bullets:
+      - Joined as an early hire and built Zynap's AI and Data functions from zero.
+      - Designed and shipped <b>NINA AI</b> — multi-agent conversational co-pilot for security engineers and SOC analysts (workflow automation, diagnostics, threat intel, malware analysis).
+      - Built ingestion platform processing <b>1B+ records/month</b> ensuring preemptive threat detection.
+      - Migrated critical query path from MongoDB to Elasticsearch — <b>67.5% faster</b> queries.
+      - Built Dark Web threat-intelligence pipeline spanning <b>5+ sources</b>.
+    tech: [Python, FastAPI, Go, LLMs, Multi-agent, LangGraph, Elasticsearch, Local LLMs, Threat Intel, ADK, DataDog, Terraform, Kubernetes, Docker, CI/CD, Gitlab, GCP, AWS, MongoDB]
+
+  - role: Senior Data Engineer
+    company: Bitpanda
+    location: Barcelona, Spain (Hybrid)
+    dates: Feb 2023 — Nov 2024
+    bullets:
+      - Led end-to-end design and implementation of Bitpanda's data platform, supporting <b>4M+ daily transactions</b>.
+      - Built <b>50+ ingestion jobs</b> (hourly/daily) feeding the data lake from internal and external sources.
+      - Rolled out dbt across <b>4 product teams</b>, decentralising data ownership. After the initial rollout, dbt has been adopted by the entire company <b>15+ teams</b>.
+      - Mentored <b>3+</b> engineers and managed interns.
+    tech: [Snowflake, dbt, Airflow, Kafka, Python, AWS, Terraform, Astronomer, Datadog, AWS, Gitlab, Iceberg]
+
+  - role: Data Engineer & Tech Lead
+    company: Inditex
+    location: Barcelona, Spain (Remote)
+    dates: Aug 2022 — Feb 2023
+    bullets:
+      - Designed data models for the Sustainability division — ESG reporting consumed by leadership and regulators across the world's largest fashion group.
+      - Built <b>50+ data objects</b> with millions of records, impacting <b>5+ teams</b>.
+      - Improved CI/CD pipelines, reducing deployment time and cost by <b>20%</b>.
+      - Tech-lead role across standards, code review, and engineer onboarding. Technical mentor for <b>5+</b> engineers.
+    tech: [Snowflake, Azure, Azure SQL, SQL, Tech Lead, Github, Docker]
+
+  - role: Data Engineer
+    company: Goin
+    location: Barcelona, Spain (Hybrid)
+    dates: Jan 2021 — Jul 2022
+    bullets:
+      - Built data pipelines and the recommendation API powering personalised financial insights for <b>500K+ active users</b>.
+      - Built the data platform end-to-end, including <b>100+</b> KPI dashboards.
+    tech: [Python, FastAPI, PostgreSQL, GCP, Docker, Github, Datadog, Terraform, Kubernetes, CI/CD]
+
+  - role: Head of Data
+    company: Delivery Mates
+    location: London, UK (Remote)
+    dates: Sep 2019 — Jan 2021
+    bullets:
+      - Built the entire data function <b>0→1</b> for a fast-growing UK last-mile logistics startup — pipelines, warehouse, reporting, analytics from scratch.
+    tech: [Airflow, Python, 0→1, Team Building, SuperSet, Metabase, Tableau, PowerBI]
+
+skills:
+  - { label: "Languages",   items: [Python, SQL, Go, TypeScript, Bash] }
+  - { label: "AI / ML",     items: [LLMs, RAG, Multi-agent systems, LangChain, LangGraph, OpenAI, Anthropic, Local LLM deployment, Vector DBs, ADK, A2A, MCP, MLOps] }
+  - { label: "Data",        items: [Snowflake, dbt, Airflow, Kafka, Spark, Elasticsearch, PostgreSQL, MongoDB, Redshift, Astronomer] }
+  - { label: "Cloud / Infra", items: [AWS, GCP, Azure, Terraform, Docker, Kubernetes, CI/CD, Digger] }
+  - { label: "Security",    items: [AI Red Teaming, Bug Bounty, Threat Intel, OSINT, CTF, Web Exploitation] }
+
+education:
+  - degree: M.Sc. in Innovation and Research in Informatics (MIRI), Data Science specialty
+    school: Universitat Politècnica de Catalunya (UPC)
+    dates: 2017 — 2019
+    note: "Thesis: Travel-time forecasting using probe-vehicle data on freeways — Grade 9.5/10."
+
+  - degree: BSc Computer Engineering
+    school: Universitat Politècnica de Catalunya
+    dates: 2013 — 2017
+    note: ""
+
+certifications:
+  - "HTB Certified Web Exploitation Specialist — Hack The Box (Apr 2026)"
+  - "Databricks Lakehouse Fundamentals — Databricks (Dec 2022)"
+  - "Big Data Analytics — Barcelona Supercomputing Center (Feb 2019)"
+  - "Applied Machine Learning in Python — Coursera / U. Michigan (Jul 2018)"
+  - "Cambridge Certificate in Advanced English (CAE) — Cambridge Assessment English"
+
+# Kept intentionally minimal per request.
+notable:
+  - "<b>Fraunhofer Institute Prize</b> — HackCorona (2020), AI Ventilator Assistant chatbot."
+  - "<b>Best Data Science Project</b> — HackEPS 2018, ML solution for BonÀrea retail challenge."
+  - "Active on Hack The Box and private bug-bounty programs."
+
+languages_spoken: "Spanish (native) · Catalan (native) · English (C1 / CAE) · Japanese (basic)"

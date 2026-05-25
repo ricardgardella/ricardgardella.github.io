@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ricard Gardella — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ---------- reset & base ---------- */
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  a { color: inherit; text-decoration: none; }
+  ul { margin: 0; padding: 0; list-style: none; }
+
+  :root {
+    --ink:      #111418;
+    --muted:    #555a63;
+    --rule:     #c9ccd1;
+    --accent:   #0b2545;
+    --serif:    "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans:     "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    font-size: 10.25pt;
+    line-height: 1.36;
+    background: #f3f4f6;
+  }
+
+  .page {
+    background: #fff;
+    width: 210mm;
+    min-height: 297mm;
+    margin: 16px auto;
+    padding: 14mm 16mm;
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+  }
+
+  /* ---------- header ---------- */
+  header.cv-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    border-bottom: 1.5px solid var(--ink);
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+  }
+  .cv-head__name {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 26pt;
+    line-height: 1.05;
+    letter-spacing: -.5px;
+    margin: 0 0 2px 0;
+  }
+  .cv-head__title {
+    font-family: var(--sans);
+    font-size: 10.5pt;
+    font-weight: 500;
+    color: var(--accent);
+    margin: 0;
+  }
+  .cv-head__contact {
+    font-size: 9pt;
+    color: var(--muted);
+    text-align: right;
+    line-height: 1.55;
+    white-space: nowrap;
+  }
+  .cv-head__contact a:hover { color: var(--accent); }
+
+  /* ---------- sections ---------- */
+  section {
+    margin-top: 12px;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+  section:first-of-type { margin-top: 6px; }
+  /* Experience is too long to keep intact — let it break between roles. */
+  section.experience-section {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  h2.section-title {
+    font-family: var(--serif);
+    font-size: 11.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: var(--ink);
+    margin: 0 0 6px 0;
+    padding-bottom: 3px;
+    border-bottom: 0.7px solid var(--rule);
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  /* ---------- summary ---------- */
+  p.summary {
+    margin: 0;
+    font-size: 10.25pt;
+    color: var(--ink);
+  }
+
+  /* ---------- experience ---------- */
+  .role {
+    margin-top: 8px;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+  .role:first-child { margin-top: 0; }
+  .role--break {
+    break-before: page;
+    page-break-before: always;
+    margin-top: 0;
+  }
+  .role__head, .role__sub {
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+  ul.bullets li {
+    orphans: 2;
+    widows: 2;
+  }
+
+  .role__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .role__title {
+    font-family: var(--sans);
+    font-size: 10.75pt;
+    font-weight: 700;
+    margin: 0;
+  }
+  .role__company {
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .role__dates {
+    font-size: 9.25pt;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .role__sub {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9.25pt;
+    color: var(--muted);
+    margin: 0 0 3px 0;
+    font-style: italic;
+  }
+
+  ul.bullets { margin: 2px 0 0 0; }
+  ul.bullets li {
+    position: relative;
+    padding-left: 12px;
+    margin: 1px 0;
+  }
+  ul.bullets li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent);
+  }
+  b { font-weight: 600; }
+
+  .tech {
+    margin-top: 3px;
+    font-size: 8.75pt;
+    color: var(--muted);
+    font-family: var(--sans);
+  }
+  .tech::before { content: "Stack: "; font-weight: 600; color: var(--ink); }
+
+  /* ---------- skills grid ---------- */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 14px;
+    row-gap: 2px;
+  }
+  .skills-grid dt {
+    font-weight: 700;
+    font-size: 9.5pt;
+    color: var(--ink);
+  }
+  .skills-grid dd {
+    margin: 0;
+    font-size: 9.75pt;
+  }
+
+  /* ---------- education ---------- */
+  .edu {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-top: 4px;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+  .edu:first-child { margin-top: 0; }
+  .edu__main { flex: 1; }
+  .edu__degree { font-weight: 700; font-size: 10.25pt; }
+  .edu__school { color: var(--accent); font-weight: 500; }
+  .edu__note { font-size: 9.25pt; color: var(--muted); font-style: italic; }
+  .edu__dates { font-size: 9.25pt; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+  /* ---------- compact lists ---------- */
+  ul.compact li { font-size: 9.75pt; margin: 1px 0; }
+  ul.compact li::before { content: "• "; color: var(--accent); }
+
+  .languages { font-size: 9.75pt; }
+
+  /* ---------- print ---------- */
+  @page { size: A4; margin: 0; }
+  @media print {
+    body { background: #fff; }
+    .page {
+      box-shadow: none;
+      margin: 0;
+      width: auto;
+      min-height: auto;
+      padding: 12mm 14mm;
+    }
+    a { color: var(--ink); }
+    .cv-head__contact a, .role__company a { color: inherit; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header class="cv-head">
+    <div>
+      <h1 class="cv-head__name">Ricard Gardella</h1>
+      <p class="cv-head__title">AI Engineer &amp; Cybersecurity Specialist</p>
+    </div>
+    <div class="cv-head__contact">
+      Barcelona, Spain<br>
+      <a href="mailto:ricard.gardella.garcia@gmail.com">ricard.gardella.garcia@gmail.com</a><br>
+<a href="https://ricardgardella.com">ricardgardella.com</a><br><a href="https://www.linkedin.com/in/ricard-gardella-garcia/">linkedin.com/in/ricard-gardella-garcia</a><br><a href="https://github.com/ricardgardella">github.com/ricardgardella</a>    </div>
+  </header>
+
+  <section>
+    <h2 class="section-title">Summary</h2>
+    <p class="summary">Senior AI engineer with 10+ years building intelligent, secure, data-driven systems across fintech, crypto, cybersecurity, retail, and logistics. Ships LLM-powered applications in production and breaks them on weekends through bug bounties and CTF. 
+</p>
+  </section>
+
+  <section class="experience-section">
+    <h2 class="section-title">Experience</h2>
+    <div class="role">
+      <div class="role__head">
+        <p class="role__title">Senior AI Engineer · <span class="role__company">Checkatrade</span></p>
+        <span class="role__dates">Apr 2026 — Present</span>
+      </div>
+      <p class="role__sub"><span>London, UK (Remote)</span></p>
+      <ul class="bullets">
+<li>Building AI-powered features for the UK's leading home-improvement platform — LLMs, RAG, MCP, A2A, ADK, and multi-agent workflows in production.</li>      </ul>
+<div class="tech">Python · AWS · LLMs · RAG · MCP · A2A · ADK · Agents · Terraform · Kubernetes · Docker · CI/CD · Digger · DataDog · ArgoCD · GCP</div>    </div>
+    <div class="role">
+      <div class="role__head">
+        <p class="role__title">Lead AI Engineer, Cybersecurity · <span class="role__company">Zynap</span></p>
+        <span class="role__dates">Oct 2024 — May 2026</span>
+      </div>
+      <p class="role__sub"><span>Barcelona, Spain (Hybrid)</span></p>
+      <ul class="bullets">
+<li>Joined as an early hire and built Zynap's AI and Data functions from zero.</li><li>Designed and shipped <b>NINA AI</b> — multi-agent conversational co-pilot for security engineers and SOC analysts (workflow automation, diagnostics, threat intel, malware analysis).</li><li>Built ingestion platform processing <b>1B+ records/month</b> ensuring preemptive threat detection.</li><li>Migrated critical query path from MongoDB to Elasticsearch — <b>67.5% faster</b> queries.</li><li>Built Dark Web threat-intelligence pipeline spanning <b>5+ sources</b>.</li>      </ul>
+<div class="tech">Python · FastAPI · Go · LLMs · Multi-agent · LangGraph · Elasticsearch · Local LLMs · Threat Intel · ADK · DataDog · Terraform · Kubernetes · Docker · CI/CD · Gitlab · GCP · AWS · MongoDB</div>    </div>
+    <div class="role">
+      <div class="role__head">
+        <p class="role__title">Senior Data Engineer · <span class="role__company">Bitpanda</span></p>
+        <span class="role__dates">Feb 2023 — Nov 2024</span>
+      </div>
+      <p class="role__sub"><span>Barcelona, Spain (Hybrid)</span></p>
+      <ul class="bullets">
+<li>Led end-to-end design and implementation of Bitpanda's data platform, supporting <b>4M+ daily transactions</b>.</li><li>Built <b>50+ ingestion jobs</b> (hourly/daily) feeding the data lake from internal and external sources.</li><li>Rolled out dbt across <b>4 product teams</b>, decentralising data ownership. After the initial rollout, dbt has been adopted by the entire company <b>15+ teams</b>.</li><li>Mentored <b>3+</b> engineers and managed interns.</li>      </ul>
+<div class="tech">Snowflake · dbt · Airflow · Kafka · Python · AWS · Terraform · Astronomer · Datadog · AWS · Gitlab · Iceberg</div>    </div>
+    <div class="role">
+      <div class="role__head">
+        <p class="role__title">Data Engineer &amp; Tech Lead · <span class="role__company">Inditex</span></p>
+        <span class="role__dates">Aug 2022 — Feb 2023</span>
+      </div>
+      <p class="role__sub"><span>Barcelona, Spain (Remote)</span></p>
+      <ul class="bullets">
+<li>Designed data models for the Sustainability division — ESG reporting consumed by leadership and regulators across the world's largest fashion group.</li><li>Built <b>50+ data objects</b> with millions of records, impacting <b>5+ teams</b>.</li><li>Improved CI/CD pipelines, reducing deployment time and cost by <b>20%</b>.</li><li>Tech-lead role across standards, code review, and engineer onboarding. Technical mentor for <b>5+</b> engineers.</li>      </ul>
+<div class="tech">Snowflake · Azure · Azure SQL · SQL · Tech Lead · Github · Docker</div>    </div>
+    <div class="role">
+      <div class="role__head">
+        <p class="role__title">Data Engineer · <span class="role__company">Goin</span></p>
+        <span class="role__dates">Jan 2021 — Jul 2022</span>
+      </div>
+      <p class="role__sub"><span>Barcelona, Spain (Hybrid)</span></p>
+      <ul class="bullets">
+<li>Built data pipelines and the recommendation API powering personalised financial insights for <b>500K+ active users</b>.</li><li>Built the data platform end-to-end, including <b>100+</b> KPI dashboards.</li>      </ul>
+<div class="tech">Python · FastAPI · PostgreSQL · GCP · Docker · Github · Datadog · Terraform · Kubernetes · CI/CD</div>    </div>
+    <div class="role">
+      <div class="role__head">
+        <p class="role__title">Head of Data · <span class="role__company">Delivery Mates</span></p>
+        <span class="role__dates">Sep 2019 — Jan 2021</span>
+      </div>
+      <p class="role__sub"><span>London, UK (Remote)</span></p>
+      <ul class="bullets">
+<li>Built the entire data function <b>0→1</b> for a fast-growing UK last-mile logistics startup — pipelines, warehouse, reporting, analytics from scratch.</li>      </ul>
+<div class="tech">Airflow · Python · 0→1 · Team Building · SuperSet · Metabase · Tableau · PowerBI</div>    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Skills</h2>
+    <dl class="skills-grid">
+      <dt>Languages</dt>
+      <dd>Python · SQL · Go · TypeScript · Bash</dd>
+      <dt>AI / ML</dt>
+      <dd>LLMs · RAG · Multi-agent systems · LangChain · LangGraph · OpenAI · Anthropic · Local LLM deployment · Vector DBs · ADK · A2A · MCP · MLOps</dd>
+      <dt>Data</dt>
+      <dd>Snowflake · dbt · Airflow · Kafka · Spark · Elasticsearch · PostgreSQL · MongoDB · Redshift · Astronomer</dd>
+      <dt>Cloud / Infra</dt>
+      <dd>AWS · GCP · Azure · Terraform · Docker · Kubernetes · CI/CD · Digger</dd>
+      <dt>Security</dt>
+      <dd>AI Red Teaming · Bug Bounty · Threat Intel · OSINT · CTF · Web Exploitation</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2 class="section-title">Education</h2>
+    <div class="edu">
+      <div class="edu__main">
+        <div class="edu__degree">M.Sc. in Innovation and Research in Informatics (MIRI), Data Science specialty</div>
+        <div class="edu__school">Universitat Politècnica de Catalunya (UPC)</div>
+<div class="edu__note">Thesis: Travel-time forecasting using probe-vehicle data on freeways — Grade 9.5/10.</div>      </div>
+      <div class="edu__dates">2017 — 2019</div>
+    </div>
+    <div class="edu">
+      <div class="edu__main">
+        <div class="edu__degree">BSc Computer Engineering</div>
+        <div class="edu__school">Universitat Politècnica de Catalunya</div>
+      </div>
+      <div class="edu__dates">2013 — 2017</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Certifications</h2>
+    <ul class="compact">
+<li>HTB Certified Web Exploitation Specialist — Hack The Box (Apr 2026)</li><li>Databricks Lakehouse Fundamentals — Databricks (Dec 2022)</li><li>Big Data Analytics — Barcelona Supercomputing Center (Feb 2019)</li><li>Applied Machine Learning in Python — Coursera / U. Michigan (Jul 2018)</li><li>Cambridge Certificate in Advanced English (CAE) — Cambridge Assessment English</li>    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title">Notable</h2>
+    <ul class="compact">
+<li><b>Fraunhofer Institute Prize</b> — HackCorona (2020), AI Ventilator Assistant chatbot.</li><li><b>Best Data Science Project</b> — HackEPS 2018, ML solution for BonÀrea retail challenge.</li><li>Active on Hack The Box and private bug-bounty programs.</li>    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title">Languages</h2>
+    <p class="languages">Spanish (native) · Catalan (native) · English (C1 / CAE) · Japanese (basic)</p>
+  </section>
+
+</main>
+</body>
+</html>
