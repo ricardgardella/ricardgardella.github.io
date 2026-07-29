@@ -1,0 +1,5 @@
+# GitHub Pages / Jekyll config.
+# Files and folders listed here are NOT published to the live site,
+# even though they remain in the repo.
+exclude:
+  - cv

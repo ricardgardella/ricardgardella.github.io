@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ name }} — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ---------- reset & base ---------- */
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  a { color: inherit; text-decoration: none; }
+  ul { margin: 0; padding: 0; list-style: none; }
+
+  :root {
+    --ink:      #111418;
+    --muted:    #555a63;
+    --rule:     #c9ccd1;
+    --accent:   #0b2545;
+    --serif:    "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans:     "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    font-size: 10.25pt;
+    line-height: 1.36;
+    background: #f3f4f6;
+  }
+
+  .page {
+    background: #fff;
+    width: 210mm;
+    min-height: 297mm;
+    margin: 16px auto;
+    padding: 14mm 16mm;
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+  }
+
+  /* ---------- header ---------- */
+  header.cv-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    border-bottom: 1.5px solid var(--ink);
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+  }
+  .cv-head__name {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 26pt;
+    line-height: 1.05;
+    letter-spacing: -.5px;
+    margin: 0 0 2px 0;
+  }
+  .cv-head__title {
+    font-family: var(--sans);
+    font-size: 10.5pt;
+    font-weight: 500;
+    color: var(--accent);
+    margin: 0;
+  }
+  .cv-head__contact {
+    font-size: 9pt;
+    color: var(--muted);
+    text-align: right;
+    line-height: 1.55;
+    white-space: nowrap;
+  }
+  .cv-head__contact a:hover { color: var(--accent); }
+
+  /* ---------- sections ---------- */
+  section {
+    margin-top: 12px;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+  section:first-of-type { margin-top: 6px; }
+  /* Experience is too long to keep intact — let it break between roles. */
+  section.experience-section {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  h2.section-title {
+    font-family: var(--serif);
+    font-size: 11.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: var(--ink);
+    margin: 0 0 6px 0;
+    padding-bottom: 3px;
+    border-bottom: 0.7px solid var(--rule);
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  /* ---------- summary ---------- */
+  p.summary {
+    margin: 0;
+    font-size: 10.25pt;
+    color: var(--ink);
+  }
+
+  /* ---------- experience ---------- */
+  .role {
+    margin-top: 8px;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+  .role:first-child { margin-top: 0; }
+  .role--break {
+    break-before: page;
+    page-break-before: always;
+    margin-top: 0;
+  }
+  .role__head, .role__sub {
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+  ul.bullets li {
+    orphans: 2;
+    widows: 2;
+  }
+
+  .role__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .role__title {
+    font-family: var(--sans);
+    font-size: 10.75pt;
+    font-weight: 700;
+    margin: 0;
+  }
+  .role__company {
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .role__dates {
+    font-size: 9.25pt;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .role__sub {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9.25pt;
+    color: var(--muted);
+    margin: 0 0 3px 0;
+    font-style: italic;
+  }
+
+  ul.bullets { margin: 2px 0 0 0; }
+  ul.bullets li {
+    position: relative;
+    padding-left: 12px;
+    margin: 1px 0;
+  }
+  ul.bullets li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent);
+  }
+  b { font-weight: 600; }
+
+  .tech {
+    margin-top: 3px;
+    font-size: 8.75pt;
+    color: var(--muted);
+    font-family: var(--sans);
+  }
+  .tech::before { content: "Stack: "; font-weight: 600; color: var(--ink); }
+
+  /* ---------- skills grid ---------- */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 14px;
+    row-gap: 2px;
+  }
+  .skills-grid dt {
+    font-weight: 700;
+    font-size: 9.5pt;
+    color: var(--ink);
+  }
+  .skills-grid dd {
+    margin: 0;
+    font-size: 9.75pt;
+  }
+
+  /* ---------- education ---------- */
+  .edu {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-top: 4px;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+  .edu:first-child { margin-top: 0; }
+  .edu__main { flex: 1; }
+  .edu__degree { font-weight: 700; font-size: 10.25pt; }
+  .edu__school { color: var(--accent); font-weight: 500; }
+  .edu__note { font-size: 9.25pt; color: var(--muted); font-style: italic; }
+  .edu__dates { font-size: 9.25pt; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+  /* ---------- compact lists ---------- */
+  ul.compact li { font-size: 9.75pt; margin: 1px 0; }
+  ul.compact li::before { content: "• "; color: var(--accent); }
+
+  .languages { font-size: 9.75pt; }
+
+  /* ---------- print ---------- */
+  @page { size: A4; margin: 0; }
+  @media print {
+    body { background: #fff; }
+    .page {
+      box-shadow: none;
+      margin: 0;
+      width: auto;
+      min-height: auto;
+      padding: 12mm 14mm;
+    }
+    a { color: var(--ink); }
+    .cv-head__contact a, .role__company a { color: inherit; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header class="cv-head">
+    <div>
+      <h1 class="cv-head__name">{{ name }}</h1>
+      <p class="cv-head__title">{{ title }}</p>
+    </div>
+    <div class="cv-head__contact">
+      {{ location }}<br>
+      <a href="mailto:{{ email }}">{{ email }}</a><br>
+      {% for link in links -%}
+      <a href="{{ link.url }}">{{ link.label }}</a>{% if not loop.last %}<br>{% endif %}
+      {% endfor %}
+    </div>
+  </header>
+
+  <section>
+    <h2 class="section-title">Summary</h2>
+    <p class="summary">{{ summary }}</p>
+  </section>
+
+  <section class="experience-section">
+    <h2 class="section-title">Experience</h2>
+    {% for r in experience %}
+    <div class="role{% if r.get('page_break_before') %} role--break{% endif %}">
+      <div class="role__head">
+        <p class="role__title">{{ r.role }} · <span class="role__company">{{ r.company }}</span></p>
+        <span class="role__dates">{{ r.dates }}</span>
+      </div>
+      <p class="role__sub"><span>{{ r.location }}</span></p>
+      <ul class="bullets">
+        {% for b in r.bullets %}<li>{{ b|safe }}</li>{% endfor %}
+      </ul>
+      {% if r.tech %}<div class="tech">{{ r.tech|join(" · ") }}</div>{% endif %}
+    </div>
+    {% endfor %}
+  </section>
+
+  <section>
+    <h2 class="section-title">Skills</h2>
+    <dl class="skills-grid">
+      {% for s in skills %}
+      <dt>{{ s.label }}</dt>
+      <dd>{{ s['items']|join(" · ") }}</dd>
+      {% endfor %}
+    </dl>
+  </section>
+
+  <section>
+    <h2 class="section-title">Education</h2>
+    {% for e in education %}
+    <div class="edu">
+      <div class="edu__main">
+        <div class="edu__degree">{{ e.degree }}</div>
+        <div class="edu__school">{{ e.school }}</div>
+        {% if e.note %}<div class="edu__note">{{ e.note }}</div>{% endif %}
+      </div>
+      <div class="edu__dates">{{ e.dates }}</div>
+    </div>
+    {% endfor %}
+  </section>
+
+  <section>
+    <h2 class="section-title">Certifications</h2>
+    <ul class="compact">
+      {% for c in certifications %}<li>{{ c|safe }}</li>{% endfor %}
+    </ul>
+  </section>
+
+  {% if notable %}
+  <section>
+    <h2 class="section-title">Notable</h2>
+    <ul class="compact">
+      {% for n in notable %}<li>{{ n|safe }}</li>{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <section>
+    <h2 class="section-title">Languages</h2>
+    <p class="languages">{{ languages_spoken }}</p>
+  </section>
+
+</main>
+</body>
+</html>
