@@ -25,8 +25,8 @@
   body {
     font-family: var(--sans);
     color: var(--ink);
-    font-size: 10.25pt;
-    line-height: 1.36;
+    font-size: 10pt;
+    line-height: 1.32;
     background: #f3f4f6;
   }
 
@@ -35,7 +35,7 @@
     width: 210mm;
     min-height: 297mm;
     margin: 16px auto;
-    padding: 14mm 16mm;
+    padding: 12mm 15mm;
     box-shadow: 0 10px 40px rgba(0,0,0,.08);
   }
 
@@ -46,13 +46,13 @@
     align-items: flex-end;
     gap: 24px;
     border-bottom: 1.5px solid var(--ink);
-    padding-bottom: 8px;
-    margin-bottom: 12px;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
   }
   .cv-head__name {
     font-family: var(--serif);
     font-weight: 700;
-    font-size: 26pt;
+    font-size: 24pt;
     line-height: 1.05;
     letter-spacing: -.5px;
     margin: 0 0 2px 0;
@@ -75,7 +75,7 @@
 
   /* ---------- sections ---------- */
   section {
-    margin-top: 12px;
+    margin-top: 10px;
     break-inside: avoid-page;
     page-break-inside: avoid;
   }
@@ -103,13 +103,13 @@
   /* ---------- summary ---------- */
   p.summary {
     margin: 0;
-    font-size: 10.25pt;
+    font-size: 10pt;
     color: var(--ink);
   }
 
   /* ---------- experience ---------- */
   .role {
-    margin-top: 8px;
+    margin-top: 6px;
     break-inside: avoid-page;
     page-break-inside: avoid;
   }
@@ -175,8 +175,8 @@
   b { font-weight: 600; }
 
   .tech {
-    margin-top: 3px;
-    font-size: 8.75pt;
+    margin-top: 2px;
+    font-size: 8.4pt;
     color: var(--muted);
     font-family: var(--sans);
   }
@@ -219,6 +219,12 @@
   /* ---------- compact lists ---------- */
   ul.compact li { font-size: 9.75pt; margin: 1px 0; }
   ul.compact li::before { content: "• "; color: var(--accent); }
+  ul.compact a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 1.5px;
+    text-decoration-thickness: 0.6px;
+  }
 
   .languages { font-size: 9.75pt; }
 
@@ -231,10 +237,11 @@
       margin: 0;
       width: auto;
       min-height: auto;
-      padding: 12mm 14mm;
+      padding: 8mm 13mm;
     }
     a { color: var(--ink); }
     .cv-head__contact a, .role__company a { color: inherit; }
+    ul.compact a { color: var(--accent); }
   }
 </style>
 </head>
@@ -268,7 +275,7 @@
       <p class="role__sub"><span>London, UK (Remote)</span></p>
       <ul class="bullets">
 <li>Building AI-powered features for the UK's leading home-improvement platform — LLMs, RAG, MCP, A2A, ADK, and multi-agent workflows in production.</li>      </ul>
-<div class="tech">Python · AWS · LLMs · RAG · MCP · A2A · ADK · Agents · Terraform · Kubernetes · Docker · CI/CD · Digger · DataDog · ArgoCD · GCP</div>    </div>
+<div class="tech">Python · AWS · GCP · LLMs · RAG · MCP · A2A · ADK · Terraform · Kubernetes · Docker · CI/CD · Datadog</div>    </div>
     <div class="role">
       <div class="role__head">
         <p class="role__title">Lead AI Engineer, Cybersecurity · <span class="role__company">Zynap</span></p>
@@ -277,7 +284,7 @@
       <p class="role__sub"><span>Barcelona, Spain (Hybrid)</span></p>
       <ul class="bullets">
 <li>Joined as an early hire and built Zynap's AI and Data functions from zero.</li><li>Designed and shipped <b>NINA AI</b> — multi-agent conversational co-pilot for security engineers and SOC analysts (workflow automation, diagnostics, threat intel, malware analysis).</li><li>Built ingestion platform processing <b>1B+ records/month</b> ensuring preemptive threat detection.</li><li>Migrated critical query path from MongoDB to Elasticsearch — <b>67.5% faster</b> queries.</li><li>Built Dark Web threat-intelligence pipeline spanning <b>5+ sources</b>.</li>      </ul>
-<div class="tech">Python · FastAPI · Go · LLMs · Multi-agent · LangGraph · Elasticsearch · Local LLMs · Threat Intel · ADK · DataDog · Terraform · Kubernetes · Docker · CI/CD · Gitlab · GCP · AWS · MongoDB</div>    </div>
+<div class="tech">Python · FastAPI · Go · LLMs · LangGraph · Elasticsearch · Terraform · Kubernetes · Docker · GCP · AWS</div>    </div>
     <div class="role">
       <div class="role__head">
         <p class="role__title">Senior Data Engineer · <span class="role__company">Bitpanda</span></p>
@@ -286,7 +293,7 @@
       <p class="role__sub"><span>Barcelona, Spain (Hybrid)</span></p>
       <ul class="bullets">
 <li>Led end-to-end design and implementation of Bitpanda's data platform, supporting <b>4M+ daily transactions</b>.</li><li>Built <b>50+ ingestion jobs</b> (hourly/daily) feeding the data lake from internal and external sources.</li><li>Rolled out dbt across <b>4 product teams</b>, decentralising data ownership. After the initial rollout, dbt has been adopted by the entire company <b>15+ teams</b>.</li><li>Mentored <b>3+</b> engineers and managed interns.</li>      </ul>
-<div class="tech">Snowflake · dbt · Airflow · Kafka · Python · AWS · Terraform · Astronomer · Datadog · AWS · Gitlab · Iceberg</div>    </div>
+<div class="tech">Snowflake · dbt · Airflow · Kafka · Python · AWS · Terraform · Astronomer · Datadog · Gitlab · Iceberg</div>    </div>
     <div class="role">
       <div class="role__head">
         <p class="role__title">Data Engineer &amp; Tech Lead · <span class="role__company">Inditex</span></p>
@@ -313,7 +320,7 @@
       <p class="role__sub"><span>London, UK (Remote)</span></p>
       <ul class="bullets">
 <li>Built the entire data function <b>0→1</b> for a fast-growing UK last-mile logistics startup — pipelines, warehouse, reporting, analytics from scratch.</li>      </ul>
-<div class="tech">Airflow · Python · 0→1 · Team Building · SuperSet · Metabase · Tableau · PowerBI</div>    </div>
+<div class="tech">Airflow · Python · 0→1 · Team Building · Superset · Metabase · Tableau · PowerBI</div>    </div>
   </section>
 
   <section>
@@ -359,7 +366,7 @@
   <section>
     <h2 class="section-title">Notable</h2>
     <ul class="compact">
-<li><b>Fraunhofer Institute Prize</b> — HackCorona (2020), AI Ventilator Assistant chatbot.</li><li><b>Best Data Science Project</b> — HackEPS 2018, ML solution for BonÀrea retail challenge.</li><li>Active on Hack The Box and private bug-bounty programs.</li>    </ul>
+<li><b>Hall of Fame — VDP &amp; Bug Bounty</b> — <a href="https://bugcrowd.com/h/r1k4ch4n">NASA VDP (x2)</a>, <a href="https://bugcrowd.com/h/r1k4ch4n">U.S. Dept. of Commerce (x1)</a>, <a href="https://doe.responsibledisclosure.com/hc/en-us/articles/360052066474-Acknowledgments">U.S. Dept. of Energy (x1)</a>.</li><li><b>Fraunhofer Institute Prize</b> — HackCorona (2020), AI Ventilator Assistant chatbot.</li><li><b>Best Data Science Project</b> — HackEPS 2018, ML solution for BonÀrea retail challenge.</li>    </ul>
   </section>
 
   <section>

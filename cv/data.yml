@@ -22,7 +22,7 @@ experience:
     dates: Apr 2026 — Present
     bullets:
       - Building AI-powered features for the UK's leading home-improvement platform — LLMs, RAG, MCP, A2A, ADK, and multi-agent workflows in production.
-    tech: [Python, AWS, LLMs, RAG, MCP, A2A, ADK, Agents, Terraform, Kubernetes, Docker, CI/CD, Digger, DataDog, ArgoCD, GCP]
+    tech: [Python, AWS, GCP, LLMs, RAG, MCP, A2A, ADK, Terraform, Kubernetes, Docker, CI/CD, Datadog]
 
   - role: Lead AI Engineer, Cybersecurity
     company: Zynap
@@ -34,7 +34,7 @@ experience:
       - Built ingestion platform processing <b>1B+ records/month</b> ensuring preemptive threat detection.
       - Migrated critical query path from MongoDB to Elasticsearch — <b>67.5% faster</b> queries.
       - Built Dark Web threat-intelligence pipeline spanning <b>5+ sources</b>.
-    tech: [Python, FastAPI, Go, LLMs, Multi-agent, LangGraph, Elasticsearch, Local LLMs, Threat Intel, ADK, DataDog, Terraform, Kubernetes, Docker, CI/CD, Gitlab, GCP, AWS, MongoDB]
+    tech: [Python, FastAPI, Go, LLMs, LangGraph, Elasticsearch, Terraform, Kubernetes, Docker, GCP, AWS]
 
   - role: Senior Data Engineer
     company: Bitpanda
@@ -45,7 +45,7 @@ experience:
       - Built <b>50+ ingestion jobs</b> (hourly/daily) feeding the data lake from internal and external sources.
       - Rolled out dbt across <b>4 product teams</b>, decentralising data ownership. After the initial rollout, dbt has been adopted by the entire company <b>15+ teams</b>.
       - Mentored <b>3+</b> engineers and managed interns.
-    tech: [Snowflake, dbt, Airflow, Kafka, Python, AWS, Terraform, Astronomer, Datadog, AWS, Gitlab, Iceberg]
+    tech: [Snowflake, dbt, Airflow, Kafka, Python, AWS, Terraform, Astronomer, Datadog, Gitlab, Iceberg]
 
   - role: Data Engineer & Tech Lead
     company: Inditex
@@ -73,7 +73,7 @@ experience:
     dates: Sep 2019 — Jan 2021
     bullets:
       - Built the entire data function <b>0→1</b> for a fast-growing UK last-mile logistics startup — pipelines, warehouse, reporting, analytics from scratch.
-    tech: [Airflow, Python, 0→1, Team Building, SuperSet, Metabase, Tableau, PowerBI]
+    tech: [Airflow, Python, 0→1, Team Building, Superset, Metabase, Tableau, PowerBI]
 
 skills:
   - { label: "Languages",   items: [Python, SQL, Go, TypeScript, Bash] }
@@ -100,10 +100,9 @@ certifications:
   - "Applied Machine Learning in Python — Coursera / U. Michigan (Jul 2018)"
   - "Cambridge Certificate in Advanced English (CAE) — Cambridge Assessment English"
 
-# Kept intentionally minimal per request.
 notable:
+  - '<b>Hall of Fame — VDP &amp; Bug Bounty</b> — <a href="https://bugcrowd.com/h/r1k4ch4n">NASA VDP (x2)</a>, <a href="https://bugcrowd.com/h/r1k4ch4n">U.S. Dept. of Commerce (x1)</a>, <a href="https://doe.responsibledisclosure.com/hc/en-us/articles/360052066474-Acknowledgments">U.S. Dept. of Energy (x1)</a>.'
   - "<b>Fraunhofer Institute Prize</b> — HackCorona (2020), AI Ventilator Assistant chatbot."
   - "<b>Best Data Science Project</b> — HackEPS 2018, ML solution for BonÀrea retail challenge."
-  - "Active on Hack The Box and private bug-bounty programs."
 
 languages_spoken: "Spanish (native) · Catalan (native) · English (C1 / CAE) · Japanese (basic)"

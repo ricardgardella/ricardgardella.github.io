@@ -25,8 +25,8 @@
   body {
     font-family: var(--sans);
     color: var(--ink);
-    font-size: 10.25pt;
-    line-height: 1.36;
+    font-size: 10pt;
+    line-height: 1.32;
     background: #f3f4f6;
   }
 
@@ -35,7 +35,7 @@
     width: 210mm;
     min-height: 297mm;
     margin: 16px auto;
-    padding: 14mm 16mm;
+    padding: 12mm 15mm;
     box-shadow: 0 10px 40px rgba(0,0,0,.08);
   }
 
@@ -46,13 +46,13 @@
     align-items: flex-end;
     gap: 24px;
     border-bottom: 1.5px solid var(--ink);
-    padding-bottom: 8px;
-    margin-bottom: 12px;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
   }
   .cv-head__name {
     font-family: var(--serif);
     font-weight: 700;
-    font-size: 26pt;
+    font-size: 24pt;
     line-height: 1.05;
     letter-spacing: -.5px;
     margin: 0 0 2px 0;
@@ -75,7 +75,7 @@
 
   /* ---------- sections ---------- */
   section {
-    margin-top: 12px;
+    margin-top: 10px;
     break-inside: avoid-page;
     page-break-inside: avoid;
   }
@@ -103,13 +103,13 @@
   /* ---------- summary ---------- */
   p.summary {
     margin: 0;
-    font-size: 10.25pt;
+    font-size: 10pt;
     color: var(--ink);
   }
 
   /* ---------- experience ---------- */
   .role {
-    margin-top: 8px;
+    margin-top: 6px;
     break-inside: avoid-page;
     page-break-inside: avoid;
   }
@@ -175,8 +175,8 @@
   b { font-weight: 600; }
 
   .tech {
-    margin-top: 3px;
-    font-size: 8.75pt;
+    margin-top: 2px;
+    font-size: 8.4pt;
     color: var(--muted);
     font-family: var(--sans);
   }
@@ -219,6 +219,12 @@
   /* ---------- compact lists ---------- */
   ul.compact li { font-size: 9.75pt; margin: 1px 0; }
   ul.compact li::before { content: "• "; color: var(--accent); }
+  ul.compact a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 1.5px;
+    text-decoration-thickness: 0.6px;
+  }
 
   .languages { font-size: 9.75pt; }
 
@@ -231,10 +237,11 @@
       margin: 0;
       width: auto;
       min-height: auto;
-      padding: 12mm 14mm;
+      padding: 8mm 13mm;
     }
     a { color: var(--ink); }
     .cv-head__contact a, .role__company a { color: inherit; }
+    ul.compact a { color: var(--accent); }
   }
 </style>
 </head>
